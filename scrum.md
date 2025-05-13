@@ -65,6 +65,8 @@
   -   formulário html - minúsculo e plural [produtos.php]
   -   input html - minúsculo e singular [email, nome, telefone]
   -   campos da tabela SQL - MAIÚSCULO e singular [NOME, TELEFONE, EMAIL]
+  -   classes CSS = singular e primeira maiúscula juntando por hífen - [Menu-Left]
+  -   id CSS = singular e minúsculo juntado por hífen - [produto-right]
  
 ## **SPRINT 1**
 - Criar páginas no *FIGMA*
