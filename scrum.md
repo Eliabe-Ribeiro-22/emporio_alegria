@@ -10,13 +10,12 @@
   - fornecedores
 - Criar página inicial, que direciona para clientes, produtos, fornecedores, vendas.
 - Criar campos para vendas
-  - Criar campos para vendas
-    - Campos:
-      - id_venda
-      - id_funcionario
-      - id_produto
-      - id_cliente ? null
-      - quatidade_produto
+  - Campos:
+    - id_venda
+    - id_funcionario
+    - id_produto
+    - id_cliente ? null
+    - quatidade_produto
 - Criar página produtos
   - Criar campos para produtos
     - Campos:
@@ -82,7 +81,53 @@
 - Gerar HTML das páginas:
   - inicial
   - vendas
+
+## SPRINT 4
+- Gerar HTML das páginas:
   - produtos
   - clientes
-  - fornecedores.
+  - fornecedores
+- Criar página produtos
+  - Criar campos para produtos
+    - Campos:
+      - id_produto
+      - descrição
+      - estoque_minimo
+      - estoque_maximo
+      - valor_unitario
+- Criar página clientes 
+  - Criar campos para clientes
+    - Campos:
+      - id_cliente
+      -   nome
+      -   endereço
+      -   telefone
+      -   email
+      -   cidade
+- Criar página fornecedores
+  - Criar campos para fornecedores:
+    - id_fornecedor
+    - nome_empresa
+    - email
+    - telefone
+
+## **SPRINT 5**
+- Gerar HTML das páginas:
+  - vendas
+- Criar campos input(HTML) para vendas
+  - Campos:
+    - id_venda
+    - id_funcionario
+    - id_produto
+    - id_cliente ? null
+    - quatidade_produto
+
+## **SPRINT 6**
+- validações de formulários com JS
+  -   venda
+  -   produtos
+  -   clientes
+  -   fornecedores
+  -   login
+
 
