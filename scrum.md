@@ -51,3 +51,9 @@
   -   formulário html - minúsculo e plural [produtos.php]
   -   input html - minúsculo e singular [email, nome, telefone]
   -   campos da tabela SQL - MAIÚSCULO e singular [NOME, TELEFONE, EMAIL]
+ 
+## SPRINT 1
+- Criar páginas no FIGMA
+  - inicial, vendas, produtos, clientes e fornecedores
+- Criar página inicial, que direciona para vendas, produtos, clientes, fornecedores.
+
