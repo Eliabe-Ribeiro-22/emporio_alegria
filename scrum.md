@@ -1,7 +1,13 @@
-# SCRUM e KANBAN Empório Alegria
+# SCRUM Empório Alegria
 
-## Backlog do projeto
-
+## **Backlog do projeto**
+- Criar README DO PROJETO
+- Criar páginas no FIGMA
+ - inicial
+ - vendas
+ - produtos
+ - clientes
+ - fornecedores
 - Criar página inicial, que direciona para clientes, produtos, fornecedores, vendas.
 - Criar campos para vendas
   - Criar campos para vendas
@@ -52,8 +58,25 @@
   -   input html - minúsculo e singular [email, nome, telefone]
   -   campos da tabela SQL - MAIÚSCULO e singular [NOME, TELEFONE, EMAIL]
  
-## SPRINT 1
-- Criar páginas no FIGMA
+## **SPRINT 1**
+- Criar páginas no *FIGMA*
   - inicial, vendas, produtos, clientes e fornecedores
 - Criar página inicial, que direciona para vendas, produtos, clientes, fornecedores.
+- Criar README DO PROJETO
+
+## **SPRINT 2**
+- Criar Banco de Dados MYSQL chamado alegria.
+- Gerar código para criar tabelas SQL:
+  - vendas
+  - produtos
+  - clientes
+  - fornecedores.
+
+## SPRINT 3
+- Gerar HTML das páginas:
+  - inicial
+  - vendas
+  - produtos
+  - clientes
+  - fornecedores.
 
