@@ -83,6 +83,8 @@ HTML, CSS, JS, PHP e MySQL
 )
 ![JS](https://github.com/user-attachments/assets/aa3a15dc-1352-4d37-bcee-2d85cf2ad1f6)
 )
-![PHP]()
-![MYSQL]()
+![PHP](https://github.com/user-attachments/assets/43dd2955-8954-452d-b04e-96abfb2870fa)
+)
+![MySQL](https://github.com/user-attachments/assets/02398dd2-6d5f-478c-b545-62f2c52fd8ab)
+
 
