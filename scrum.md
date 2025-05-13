@@ -9,6 +9,7 @@
       - id_venda
       - id_funcionario
       - id_produto
+      - id_cliente ? null
       - quatidade_produto
 - Criar página produtos
   - Criar campos para produtos
@@ -20,7 +21,18 @@
       - valor_unitario
 - Criar página clientes 
   - Criar campos para clientes
+    - Campos:
+      - id_cliente
+      -   nome
+      -   endereço
+      -   telefone
+      -   email
+      -   cidade
 - Criar página fornecedores
-  - Criar campos para fornecedores
+  - Criar campos para fornecedores:
+    - id_fornecedor
+    - nome_empresa
+    - email
+    - telefone
 - Criar Banco de Dados MYSQL chamado alegria.
-  - Criar tabela vendas, produtos, clientes e fornecedores. 
+  - Criar tabelas vendas, produtos, clientes e fornecedores. 
