@@ -139,16 +139,29 @@
   -   fornecedores
   -   login
  - Testar se as verificações são suficientes, considerando o usuário leigo.
-
 ## **SPRINT 7** Eliabe
+
+
+## **SPRINT 8** Eliabe
 - Realizar conexão com Banco de Dados SQL
 - Enviar dados do form com PHP
   - printar na tela
 
-## **SPRINT 8** Eliabe
+## **SPRINT 9** Eliabe
 - Fazer dados no input HTMl serem salvos no Banco de Dados
 
-## *SPRINT 9** Eliabe
+## **SPRINT 10** Eliabe
+- Criação dos styles do site com CSS
+   -   venda
+   -   produtos
+   -   clientes
+   -   fornecedores
+   -   login
+
+## **SPRINT 11** Eliabe
+  - Responsividade CSS
+
+## **SPRINT 12** Eliabe
 - Testes de homologação
 - Entrega final do site ao cliente
 
