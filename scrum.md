@@ -47,5 +47,7 @@
   -   login
  
   -   padrão de código:
-  -   tabela - MAIÚSCULO e plura [CLIENTES]
+  -   tabela SQL - MAIÚSCULO e plura [CLIENTES]
   -   formulário html - minúsculo e plural [produtos.php]
+  -   input html - minúsculo e singular [email, nome, telefone]
+  -   campos da tabela SQL - MAIÚSCULO e singular [NOME, TELEFONE, EMAIL]
