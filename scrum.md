@@ -35,4 +35,13 @@
     - email
     - telefone
 - Criar Banco de Dados MYSQL chamado alegria.
-  - Criar tabelas vendas, produtos, clientes e fornecedores. 
+  - Criar tabelas vendas, produtos, clientes e fornecedores.
+- Criar sistema de Login
+  - Acessar a página inicial da área logada.
+  - cadastrar novos usuário
+- validações de formulários HTMl
+  -   venda
+  -   produtos
+  -   clientes
+  -   fornecedores
+  -   login
