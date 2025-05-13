@@ -5,8 +5,19 @@
 - Criar página inicial, que direciona para clientes, produtos, fornecedores, vendas.
 - Criar campos para vendas
   - Criar campos para vendas
+    - Campos:
+      - id_venda
+      - id_funcionario
+      - id_produto
+      - quatidade_produto
 - Criar página produtos
   - Criar campos para produtos
+    - Campos:
+      - id_produto
+      - descrição
+      - estoque_minimo
+      - estoque_maximo
+      - valor_unitario
 - Criar página clientes 
   - Criar campos para clientes
 - Criar página fornecedores
