@@ -3,11 +3,11 @@
 ## **Backlog do projeto**
 - Criar README DO PROJETO
 - Criar páginas no FIGMA
- - inicial
- - vendas
- - produtos
- - clientes
- - fornecedores
+  - inicial
+  - vendas
+  - produtos
+  - clientes
+  - fornecedores
 - Criar página inicial, que direciona para clientes, produtos, fornecedores, vendas.
 - Criar campos para vendas
   - Criar campos para vendas
@@ -52,7 +52,7 @@
   -   fornecedores
   -   login
  
-  -   padrão de código:
+- padrão de código:
   -   tabela SQL - MAIÚSCULO e plura [CLIENTES]
   -   formulário html - minúsculo e plural [produtos.php]
   -   input html - minúsculo e singular [email, nome, telefone]
