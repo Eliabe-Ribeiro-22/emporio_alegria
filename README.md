@@ -77,3 +77,12 @@ O Backend ficará com o PHP.
 ## **Linguagens utilizadas**
 
 HTML, CSS, JS, PHP e MySQL
+
+![HTML](https://github.com/user-attachments/assets/20b136b3-2645-45b3-9612-3836a690591f)
+![CSS](https://github.com/user-attachments/assets/dfded212-4fd1-4d96-8f3c-136f3cea2791)
+)
+![JS](https://github.com/user-attachments/assets/aa3a15dc-1352-4d37-bcee-2d85cf2ad1f6)
+)
+![PHP]()
+![MYSQL]()
+
