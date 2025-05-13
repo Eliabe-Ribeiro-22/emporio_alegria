@@ -1,5 +1,6 @@
 # SCRUM Empório Alegria
-
+[fazer kanban]
+## Cada sprint = 7 dias
 ## **Backlog do projeto**
 - Criar README DO PROJETO
 - Criar páginas no FIGMA
