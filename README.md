@@ -7,3 +7,9 @@ Este projeto estará conectado a um Banco de Dados do tipo SQL.
 
 E será feito no front-end com JS, CSS e HTML.
 O Backend ficará com o PHP.
+
+## Backlog do projeto
+
+## Linguagens utilizadas
+
+HTML, CSS, JS, PHP e MySQL
