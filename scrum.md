@@ -71,6 +71,7 @@
 ## **SPRINT 1** Eliabe
 - Criar páginas no *FIGMA*
   - inicial, vendas, produtos, clientes e fornecedores
+- mandar fotos do FIGMA para cliente e postar no README também.
 - Criar página inicial, que direciona para vendas, produtos, clientes, fornecedores.
 - Criar README DO PROJETO
 
@@ -144,4 +145,9 @@
   - printar na tela
 
 ## **SPRINT 8** Eliabe
+- Fazer dados no input HTMl serem salvos no Banco de Dados
+
+## *SPRINT 9** Eliabe
+- Testes de homologação
+- Entrega final do site ao cliente
 
