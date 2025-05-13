@@ -33,6 +33,7 @@ O Backend ficará com o PHP.
       - estoque_minimo
       - estoque_maximo
       - valor_unitario
+      - quantidade
 - Criar página clientes 
   - Criar campos para clientes
     - Campos:
