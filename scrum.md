@@ -68,30 +68,32 @@
   -   classes CSS = singular e primeira maiúscula juntando por hífen - [Menu-Left]
   -   id CSS = singular e minúsculo juntado por hífen - [produto-right]
  
-## **SPRINT 1**
+## **SPRINT 1** Eliabe
 - Criar páginas no *FIGMA*
   - inicial, vendas, produtos, clientes e fornecedores
 - Criar página inicial, que direciona para vendas, produtos, clientes, fornecedores.
 - Criar README DO PROJETO
 
-## **SPRINT 2**
+## **SPRINT 2** Eliabe
 - Criar Banco de Dados MYSQL chamado alegria.
+- Realizar teste de conexão com Banco de Dados SQL
 - Gerar código para criar tabelas SQL:
   - vendas
   - produtos
   - clientes
   - fornecedores.
 
-## SPRINT 3
+## **SPRINT 3** Eliabe
 - Gerar HTML das páginas:
   - inicial
   - vendas
 
-## SPRINT 4
+## **SPRINT 4** Eliabe
 - Gerar HTML das páginas:
   - produtos
   - clientes
   - fornecedores
+- Realizar testes de funcionalidade nas páginas HTML
 - Criar página produtos
   - Criar campos para produtos
     - Campos:
@@ -116,7 +118,7 @@
     - email
     - telefone
 
-## **SPRINT 5**
+## **SPRINT 5** Eliabe
 - Gerar HTML das páginas:
   - vendas
 - Criar campos input(HTML) para vendas
@@ -127,12 +129,19 @@
     - id_cliente ? null
     - quatidade_produto
 
-## **SPRINT 6**
+## **SPRINT 6** Eliabe
 - validações de formulários com JS
   -   venda
   -   produtos
   -   clientes
   -   fornecedores
   -   login
+ - Testar se as verificações são suficientes, considerando o usuário leigo.
 
+## **SPRINT 7** Eliabe
+- Realizar conexão com Banco de Dados SQL
+- Enviar dados do form com PHP
+  - printar na tela
+
+## **SPRINT 8** Eliabe
 
