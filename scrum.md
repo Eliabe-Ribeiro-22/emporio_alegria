@@ -45,13 +45,19 @@
 - Criar sistema de Login
   - Acessar a página inicial da área logada.
   - cadastrar novos usuário
-- validações de formulários HTMl
+- validações de formulários com JS
   -   venda
   -   produtos
   -   clientes
   -   fornecedores
   -   login
- 
+ - Criação dos styles do site com CSS
+   -   venda
+   -   produtos
+   -   clientes
+   -   fornecedores
+   -   login
+  - Responsividade CSS
 - padrão de código:
   -   tabela SQL - MAIÚSCULO e plura [CLIENTES]
   -   formulário html - minúsculo e plural [produtos.php]
