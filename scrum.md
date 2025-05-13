@@ -45,3 +45,7 @@
   -   clientes
   -   fornecedores
   -   login
+ 
+  -   padrão de código:
+  -   tabela - MAIÚSCULO e plura [CLIENTES]
+  -   formulário html - minúsculo e plural [produtos.php]
