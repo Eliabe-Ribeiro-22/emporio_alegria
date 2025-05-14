@@ -1,5 +1,4 @@
 # SCRUM Empório Alegria
-[fazer kanban]
 ## Cada sprint = 7 dias
 ## data inicial projeto: 13/05/2025
 
