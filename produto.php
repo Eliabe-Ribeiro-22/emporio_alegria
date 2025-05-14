@@ -11,8 +11,10 @@
 </header>
 
 <main>
-	<h1>Cadastrar</h1>
+	<h1>Cadastrar Produto</h1>
 	<form>
+		<label></label>
+		<input type="text">
 	
 	</form>
 <a href="./index.php">Voltar ao inicio</a>
