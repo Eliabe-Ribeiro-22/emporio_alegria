@@ -4,6 +4,8 @@
 		$dbname = "alegria";
 		$username = "root";
 		$password= "";
+		//$username = "emporio";
+		//$password= "1234";
 
 		try{
 			$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

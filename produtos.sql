@@ -1,0 +1,9 @@
+CREATE TABLE PRODUTOS(
+	ID_PRODUTO int,
+	DESCRICAO varchar(255),
+	ESTOQUE_MINIMO integer(255),
+	ESTOQUE_MAXIMO integer(255),
+	VALOR_UNITARIO integer(255),
+	QUANTIDADE integer(255),
+
+);
