@@ -15,7 +15,6 @@
 - Criar campos para vendas
   - Campos:
     - id_venda
-    - id_funcionario
     - id_produto
     - id_cliente ? null
     - quatidade_produto
