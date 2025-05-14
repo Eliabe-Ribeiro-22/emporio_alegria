@@ -9,7 +9,6 @@
 
 ## DOING
 
-- Realizar teste de conexão com Banco de Dados SQL
 
 
 ## TESTED
@@ -22,4 +21,5 @@
   - mandar fotos do FIGMA para cliente
 - postar no README também.
 - Criar Banco de Dados MYSQL chamado alegria.
+- Realizar teste de conexão com Banco de Dados SQL
 

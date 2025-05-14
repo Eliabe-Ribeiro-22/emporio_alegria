@@ -1,16 +1,6 @@
 clente
 <a href="./index.php">Voltar ao inicio</a>
-<?php 
-	$host = "localhost";
-	$dbname = "alegria";
-	$username = "root";
-	$password= "";
-
-	try{
-		$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-		echo "conexão com sucesso";
-
-	}catch(PDOException $pe){
-		die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
-	}
+<?php
+require_once "config.php";
+conexaoDB();
 ?>

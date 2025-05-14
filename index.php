@@ -24,3 +24,7 @@
 </footer>
 </body>
 </html>
+<?php
+require_once "config.php";
+conexaoDB();
+?>
