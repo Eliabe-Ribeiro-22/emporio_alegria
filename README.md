@@ -89,3 +89,10 @@ HTML, CSS, JS, PHP e MySQL
 ![MySQL](https://github.com/user-attachments/assets/02398dd2-6d5f-478c-b545-62f2c52fd8ab)
 
 
+## **Como ficará o projeto**
+
+![Página inicial do site](./assets/img/imagens_projeto/index.png)
+![Página Produtos](./assets/img/imagens_projeto/produtos.png)
+![Página Clientes](./assets/img/imagens_projeto/clientes.png)
+![Página Fornecedores](./assets/img/imagens_projeto/fornecedores.png)
+![Página Vendas](./assets/img/imagens_projeto/vendas.png)
