@@ -15,7 +15,7 @@
 		<a href="../index.php">Voltar ao inicio</a>
 		<form action="" method="">
 			<label>Código:</label>
-			<input type="text"disabled name="codigo_fornecedor" id="codigo_fornecedor">
+			<input type="text"disabled value="0" name="codigo_fornecedor" id="codigo_fornecedor">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_fornecedor" id="nome_fornecedor">

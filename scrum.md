@@ -116,7 +116,6 @@
 ## **SPRINT 3** Eliabe
 - Gerar HTML das páginas:
   - inicial
-  - vendas
 
 ## **SPRINT 4** Eliabe
 - Gerar HTML das páginas:
@@ -168,9 +167,6 @@
   -   login
  - Testar se as verificações são suficientes, considerando o usuário leigo.
 ## **SPRINT 7** Eliabe
-
-
-## **SPRINT 8** Eliabe
 - Realizar conexão com Banco de Dados SQL
 - Enviar dados do form com PHP
   - printar na tela

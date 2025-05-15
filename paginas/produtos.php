@@ -15,7 +15,7 @@
 	<a href="../index.php">Voltar ao inicio</a>
 	<form action="" method="">
 		<label>Código:</label>
-		<input type="text"disabled name="codigo_produto" id="codigo_produto">
+		<input type="text"disabled value="0" name="codigo_produto" id="codigo_produto">
 	
 		<label>Nome:</label>
 		<input type="text"  name="nome-produto" id="nome-produto">
@@ -41,6 +41,7 @@
 <footer>
 	rodapé.
 	All rights reserved.2025-2025. Eliabe Ribeiro Mota.
+	<script type="text/javascript"src="../assets/js/produtos.js"></script>
 </footer>
 </body>
 </html>
