@@ -12,9 +12,10 @@
 
 <main>
 	<h1>Cadastrar Produto</h1>
-	<form>
+	<a href="../index.php">Voltar ao inicio</a>
+	<form action="" method="">
 		<label>Código Produto:</label>
-		<input type="text"disabled name="codigo" id="codigo">
+		<input type="text"disabled name="codigo_produto" id="codigo_produto">
 	
 		<label>Nome Produto:</label>
 		<input type="text"  name="nome-produto" id="nome-produto">
@@ -31,8 +32,10 @@
 		<label>Quantidade Produto:</label>
 		<input type="number" name="quantidade" id="quantidade">
 	
+		<input type="submit" value="Alterar">
+		<input type="submit" value="Cadastrar">
+
 	</form>
-<a href="../index.php">Voltar ao inicio</a>
 </main>
 
 <footer>
