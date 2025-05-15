@@ -12,10 +12,10 @@
 
 <main>
 	Conteúdo do site
-<a href="./produto.php">Cadastrar produto</a>	
-<a href="./cliente.php">Cadastrar cliente</a>	
-<a href="./venda.php">Cadastrar venda</a>
-<a href="./fornecedor.php">Cadastrar fornecedor</a>		
+<a href="./paginas/produtos.php">Cadastrar produto</a>	
+<a href="./paginas/clientes.php">Cadastrar cliente</a>	
+<a href="./paginas/vendas.php">Cadastrar venda</a>
+<a href="./paginas/fornecedores.php">Cadastrar fornecedor</a>		
 </main>
 
 <footer>
@@ -25,6 +25,6 @@
 </body>
 </html>
 <?php
-require_once "config.php";
+require_once "./paginas/config.php";
 conexaoDB();
 ?>

@@ -82,6 +82,36 @@
   - produtos
   - clientes
   - fornecedores.
+- Criar campos para vendas
+  - Campos:
+    - id_venda
+    - id_produto
+    - id_cliente ? null
+    - quatidade_produto
+- Criar página produtos
+  - Criar campos para produtos
+    - Campos:
+      - id_produto
+      - descrição
+      - estoque_minimo
+      - estoque_maximo
+      - valor_unitario
+      - quantidade
+- Criar página clientes 
+  - Criar campos para clientes
+    - Campos:
+      - id_cliente
+      -   nome
+      -   endereço
+      -   telefone
+      -   email
+      -   cidade
+- Criar página fornecedores
+  - Criar campos para fornecedores:
+    - id_fornecedor
+    - nome_empresa
+    - email
+    - telefone
 
 ## **SPRINT 3** Eliabe
 - Gerar HTML das páginas:

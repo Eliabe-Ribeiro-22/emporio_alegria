@@ -17,7 +17,7 @@
 		<input type="text">
 	
 	</form>
-<a href="./index.php">Voltar ao inicio</a>
+<a href="../index.php">Voltar ao inicio</a>
 </main>
 
 <footer>
@@ -29,7 +29,7 @@
 
 
 <?php
-require_once "config.php";
+require_once "./config.php";
 conexaoDB();
 
 
