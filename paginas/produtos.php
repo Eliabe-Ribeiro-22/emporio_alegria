@@ -14,22 +14,22 @@
 	<h1>Cadastrar Produto</h1>
 	<a href="../index.php">Voltar ao inicio</a>
 	<form action="" method="">
-		<label>Código Produto:</label>
+		<label>Código:</label>
 		<input type="text"disabled name="codigo_produto" id="codigo_produto">
 	
-		<label>Nome Produto:</label>
+		<label>Nome:</label>
 		<input type="text"  name="nome-produto" id="nome-produto">
 	
-		<label>Estoque Mínimo Produto:</label>
+		<label>Estoque Mínimo:</label>
 		<input type="number" name="estoque-minimo" id="estoque-minimo">
 	
-		<label>Estoque Máximo Produto:</label>
+		<label>Estoque Máximo:</label>
 		<input type="number" name="estoque-maximo" id="estoque-maximo">
 	
-		<label>Valor Unitário Produto:</label>
+		<label>Valor Unitário:</label>
 		<input type="text" name="valor-unitario" id="valor-unitario">
 	
-		<label>Quantidade Produto:</label>
+		<label>Quantidade:</label>
 		<input type="number" name="quantidade" id="quantidade">
 	
 		<input type="submit" value="Alterar">

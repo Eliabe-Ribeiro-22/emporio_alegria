@@ -17,13 +17,13 @@
 			<label>Código:</label>
 			<input type="text"disabled name="codigo_cliente" id="codigo_cliente">
 
-			<label>Nome</label>
+			<label>Nome:</label>
 			<input type="text" name="nome_cliente" id="nome_cliente">
 
-			<label>Endereço</label>
+			<label>Endereço:</label>
 			<input type="text" name="endereco_cliente" id="endereco_cliente">
 
-			<label>Telefone</label>
+			<label>Telefone:</label>
 			<input type="text" name="telefone_cliente" id="telefone_cliente">
 
 			<label>Email:</label>
