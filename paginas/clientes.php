@@ -33,7 +33,7 @@
 			<input type="text" name="cidade_cliente" id="cidade-cliente">
 	
 			<!--input type="submit" value="Alterar"-->
-			<input type="submit" value="Cadastrar">
+			<input type="submit" value="cadastrar" name="cadastrar">
 		</form>
 	</main>
 	

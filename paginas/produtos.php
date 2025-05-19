@@ -18,22 +18,22 @@
 		<input type="text"disabled value="0" name="codigo_produto" id="codigo-produto">
 	
 		<label>Nome:</label>
-		<input type="text"  name="nome-produto" id="nome-produto">
+		<input type="text"  name="nome_produto" id="nome-produto">
 	
 		<label>Estoque Mínimo:</label>
-		<input type="number" name="estoque-minimo" id="estoque-minimo">
+		<input type="number" name="estoque_minimo" id="est-min">
 	
 		<label>Estoque Máximo:</label>
-		<input type="number" name="estoque-maximo" id="estoque-maximo">
+		<input type="number" name="estoque_maximo" id="est-max">
 	
 		<label>Valor Unitário:</label>
-		<input type="text" name="valor-unitario" id="valor-unitario">
+		<input type="text" name="valor_unitario" id="valor-unitario">
 	
 		<label>Quantidade:</label>
-		<input type="number" name="quantidade" id="quantidade">
+		<input type="number" name="qtdade" id="qtdade">
 	
 		<!--input type="submit" value="Alterar"-->
-		<input type="submit" value="Cadastrar">
+		<input type="submit" value="cadastrar" name="cadastrar">
 
 	</form>
 </main>
@@ -50,6 +50,20 @@
 <?php
 require_once "./config.php";
 conexaoDB();
+
+if(isset($_POST["cadastrar"])){
+	$nome_produto = $_POST['nome_produto'];
+	$est_min_produto = $_POST[''];
+	$est_max_produto = $_POST['variable'];
+	$valor_unit_produto = $_POST['variable'];
+	$qtade_produto = $_POST['variable'];
+
+	echo $nome_produto . "<br>";
+	echo $est_min_produto . "<br>";
+	echo $est_max_produto . "<br>";
+	echo $valor_unit_produto . "<br>";
+	echo $qtade_produto . "<br>";
+}
 
 
 ?>

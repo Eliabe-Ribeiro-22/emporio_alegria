@@ -1,6 +1,9 @@
 ## Kanban emporio_alegria
 
 ## TO DO
+- Enviar dados do form com PHP
+  - printar na tela
+
 - validações de formulários com JS
   -   login
 - validações de formulários com JS
@@ -28,6 +31,7 @@
 
 
 ## DONE
+- Realizar conexão com Banco de Dados SQL
 - validações de formulários com JS
   -   produtos
   -   clientes

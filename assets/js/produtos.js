@@ -1,10 +1,10 @@
 function valida_produtos(){
 //pegar valores no html
 let nome_produto = document.querySelector("#nome-produto").value;
-let est_min_produto = document.querySelector("#estoque-minimo").value;
-let est_max_produto = document.querySelector("#estoque-maximo").value;
-let valor_unit = document.querySelector("#valor-unitario").value;
-let qtdade = document.querySelector("#quantidade").value;
+let est_min_produto = document.querySelector("#est-min").value;
+let est_max_produto = document.querySelector("#est-max").value;
+let valor_unit_produto = document.querySelector("#valor-unitario").value;
+let qtdade_produto = document.querySelector("#qtdade").value;
 
 	//se campo vazio ou menor a zero, mensagem de alerta
 	if (nome_produto == "") {
@@ -22,12 +22,12 @@ let qtdade = document.querySelector("#quantidade").value;
 		est_max_produto.focus();
 		return false;
 	}
-	if (valor_unit == "" || valor_unit == "0") {
+	if (valor_unit_produto == "" || valor_unit_produto == "0") {
 		alert("Informe o valor unitario");
 		valor_unit.focus();
 		return false;
 	}
-	if (qtdade == "" || qtdade == "0") {
+	if (qtdade_produto == "" || qtdade_produto == "0") {
 		alert("Informe a quantidade");
 		qtdade.focus();
 		return false;

@@ -13,7 +13,7 @@
 	<main>
 		<h1>Cadastre um fornecedor</h1>
 		<a href="../index.php">Voltar ao inicio</a>
-		<form action="" method="" onsubmit="return valida_fornecedores()">
+		<form action="" method="POST" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>
 			<input type="text"disabled value="0" name="codigo-fornecedor" id="codigo_fornecedor">
 
@@ -26,7 +26,7 @@
 			<label>Telefone:</label>
 			<input type="text" name="telefone_fornecedor" id="telefone-fornecedor">
 
-			<input type="submit" value="Cadastrar">
+			<input type="submit" value="cadastrar" name="cadastrar">
 		</form>
 		<script type="text/javascript" src="../assets/js/fornecedores.js"></script>
 	</main>
@@ -35,4 +35,16 @@
 <?php
 require_once "config.php";
 conexaoDB();
+
+if (isset($_POST['cadastrar'])) {
+	$nome_fornecedor = $_POST['nome_fornecedor'];
+	$email_fornecedor = $_POST['email_fornecedor'];
+	$telefone_fornecedor = $_POST['telefone_fornecedor'];
+
+	echo $nome_fornecedor . "<br>";
+	echo $email_fornecedor . "<br>";
+	echo $telefone_fornecedor . "<br>";
+
+}
+
 ?>
