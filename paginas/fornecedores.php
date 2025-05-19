@@ -13,23 +13,22 @@
 	<main>
 		<h1>Cadastre um fornecedor</h1>
 		<a href="../index.php">Voltar ao inicio</a>
-		<form action="" method="">
+		<form action="" method="" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>
-			<input type="text"disabled value="0" name="codigo_fornecedor" id="codigo_fornecedor">
+			<input type="text"disabled value="0" name="codigo-fornecedor" id="codigo_fornecedor">
 
 			<label>Nome:</label>
-			<input type="text" name="nome_fornecedor" id="nome_fornecedor">
+			<input type="text" name="nome_fornecedor" id="nome-fornecedor">
 
 			<label>Email:</label>
-			<input type="email" name="email_fornecedor" id="email_fornecedor">
+			<input type="email" name="email_fornecedor" id="email-fornecedor">
 
-			<label>Telefon:</label>
-			<input type="text" name="telefone_fornecedor" id="telefone_fornecedor">
+			<label>Telefone:</label>
+			<input type="text" name="telefone_fornecedor" id="telefone-fornecedor">
 
-
-
-
+			<input type="submit" value="Cadastrar">
 		</form>
+		<script type="text/javascript" src="../assets/js/fornecedores.js"></script>
 	</main>
 </body>
 </html>

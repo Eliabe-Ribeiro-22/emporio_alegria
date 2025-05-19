@@ -11,11 +11,11 @@
 	</header>
 	
 	<main>
-		<h1>Cadastre um fornecedor</h1>
+		<h1>Cadastre um cliente</h1>
 		<a href="../index.php">Voltar ao inicio</a>
 		<form action="" method="" onsubmit="return valida_clientes()">
 			<label>Código:</label>
-			<input type="text"disabled value="0" name="codigo_cliente" id="codigo_cliente">
+			<input type="text"disabled value="0" name="codigo_cliente" id="codigo-cliente">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_cliente" id="nome-cliente">
@@ -32,7 +32,7 @@
 			<label>Cidade:</label>
 			<input type="text" name="cidade_cliente" id="cidade-cliente">
 	
-			<input type="submit" value="Alterar">
+			<!--input type="submit" value="Alterar"-->
 			<input type="submit" value="Cadastrar">
 		</form>
 	</main>
