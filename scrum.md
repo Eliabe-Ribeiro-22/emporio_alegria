@@ -171,10 +171,10 @@
 - Enviar dados do form com PHP
   - printar na tela
 
-## **SPRINT 9** Eliabe
+## **SPRINT 8** Eliabe
 - Fazer dados no input HTMl serem salvos no Banco de Dados
 
-## **SPRINT 10** Eliabe
+## **SPRINT 9** Eliabe
 - Criação dos styles do site com CSS
    -   venda
    -   produtos

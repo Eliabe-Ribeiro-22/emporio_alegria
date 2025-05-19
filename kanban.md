@@ -3,15 +3,8 @@
 ## TO DO
 - validações de formulários com JS
   -   login
-
-## DOING
 - validações de formulários com JS
   -   venda
-  -   produtos
-  -   clientes
-  -   fornecedores
-
-
 - Gerar HTML das páginas:
   - vendas
 - Criar campos input(HTML) para vendas
@@ -22,6 +15,7 @@
     - id_cliente ? null
     - quatidade_produto
 
+## DOING
 
 
 ## TEST
@@ -34,6 +28,10 @@
 
 
 ## DONE
+- validações de formulários com JS
+  -   produtos
+  -   clientes
+  -   fornecedores
 - Realizar conexão com Banco de Dados SQL
 - Gerar HTML das páginas:
   - produtos
