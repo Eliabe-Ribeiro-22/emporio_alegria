@@ -53,10 +53,10 @@ conexaoDB();
 
 if(isset($_POST["cadastrar"])){
 	$nome_produto = $_POST['nome_produto'];
-	$est_min_produto = $_POST[''];
-	$est_max_produto = $_POST['variable'];
-	$valor_unit_produto = $_POST['variable'];
-	$qtade_produto = $_POST['variable'];
+	$est_min_produto = $_POST['estoque_minimo'];
+	$est_max_produto = $_POST['estoque_maximo'];
+	$valor_unit_produto = $_POST['valor_unitario'];
+	$qtade_produto = $_POST['qtade'];
 
 	echo $nome_produto . "<br>";
 	echo $est_min_produto . "<br>";
