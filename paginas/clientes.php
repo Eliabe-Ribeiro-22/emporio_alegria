@@ -13,24 +13,24 @@
 	<main>
 		<h1>Cadastre um fornecedor</h1>
 		<a href="../index.php">Voltar ao inicio</a>
-		<form action="" method="">
+		<form action="" method="" onsubmit="return valida_clientes()">
 			<label>Código:</label>
 			<input type="text"disabled value="0" name="codigo_cliente" id="codigo_cliente">
 
 			<label>Nome:</label>
-			<input type="text" name="nome_cliente" id="nome_cliente">
+			<input type="text" name="nome_cliente" id="nome-cliente">
 
 			<label>Endereço:</label>
-			<input type="text" name="endereco_cliente" id="endereco_cliente">
+			<input type="text" name="endereco_cliente" id="endereco-cliente">
 
 			<label>Telefone:</label>
-			<input type="text" name="telefone_cliente" id="telefone_cliente">
+			<input type="text" name="telefone_cliente" id="telefone-cliente">
 
 			<label>Email:</label>
-			<input type="text" name="email_cliente" id="email_cliente">
+			<input type="email" name="email_cliente" id="email-cliente">
 
 			<label>Cidade:</label>
-			<input type="email" name="cidade_cliente" id="cidade_cliente">
+			<input type="text" name="cidade_cliente" id="cidade-cliente">
 	
 			<input type="submit" value="Alterar">
 			<input type="submit" value="Cadastrar">
@@ -39,6 +39,7 @@
 	
 	<footer>
 		rodapé
+	<script type="text/javascript" src="../assets/js/clientes.js"></script>		
 	</footer>
 </body>
 </html>

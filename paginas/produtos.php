@@ -13,7 +13,7 @@
 <main>
 	<h1>Cadastrar Produto</h1>
 	<a href="../index.php">Voltar ao inicio</a>
-	<form action="" method="">
+	<form action="" method="" onsubmit="return valida_produtos()">
 		<label>Código:</label>
 		<input type="text"disabled value="0" name="codigo_produto" id="codigo_produto">
 	
@@ -32,7 +32,7 @@
 		<label>Quantidade:</label>
 		<input type="number" name="quantidade" id="quantidade">
 	
-		<input type="submit" value="Alterar">
+		<!--input type="submit" value="Alterar"-->
 		<input type="submit" value="Cadastrar">
 
 	</form>
