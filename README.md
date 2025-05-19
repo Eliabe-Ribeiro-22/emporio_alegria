@@ -94,7 +94,10 @@ HTML, CSS, JS, PHP e MySQL
 ## **Como ficará o projeto**
 
 ![Página inicial do site](./assets/img/imagens_projeto/index.png)
-![Página Produtos](./assets/img/imagens_projeto/produtos.png)
-![Página Clientes](./assets/img/imagens_projeto/clientes.png)
-![Página Fornecedores](./assets/img/imagens_projeto/fornecedores.png)
-![Página Vendas](./assets/img/imagens_projeto/vendas.png)
+![Página Cadastrar Produtos](./assets/img/imagens_projeto/produtos.png)
+![Página Cadastrar Clientes](./assets/img/imagens_projeto/clientes.png)
+![Página Cadastrar Fornecedores](./assets/img/imagens_projeto/fornecedores.png)
+![Página Cadastrar Vendas](./assets/img/imagens_projeto/vendas.png)
+![Página Produtos](./assets/img/imagens_projeto/home_produtos.png)
+![Página Clientes](./assets/img/imagens_projeto/home_clientes.png)
+![Página Fornecedores](./assets/img/imagens_projeto/home_fornecedores.png)
