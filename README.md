@@ -3,6 +3,8 @@
 
 Nele, o funcionário pode cadastrar clientes, fornecedores, produtos, bem como vendas realizadas no mercado.
 
+Para acessar o cadastro, ele precisa acessar a home, exemplo: home_clientes para clientes_cadastro. Sendo semelhantemente com home_produtos e home_fornecedores.
+
 Este projeto estará conectado a um Banco de Dados do tipo SQL.
 
 E será feito no front-end com JS, CSS e HTML.

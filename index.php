@@ -12,10 +12,10 @@
 
 <main>
 	Conteúdo do site
-<a href="./paginas/produtos.php">Cadastrar produto</a>	
-<a href="./paginas/clientes.php">Cadastrar cliente</a>	
+<a href="./paginas/home_produtos.php">Cadastrar produto</a>	
+<a href="./paginas/home_clientes.php">Cadastrar cliente</a>	
 <a href="./paginas/vendas.php">Cadastrar venda</a>
-<a href="./paginas/fornecedores.php">Cadastrar fornecedor</a>		
+<a href="./paginas/home_fornecedores.php">Cadastrar fornecedor</a>		
 </main>
 
 <footer>
