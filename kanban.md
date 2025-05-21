@@ -1,9 +1,11 @@
 ## Kanban emporio_alegria
 
 ## TO DO
-- Enviar dados do form com PHP
-  - printar na tela
-
+- Fazer dados no input HTMl serem salvos no Banco de Dados
+  - fornecedores
+  - clientes
+  - produtos
+  - vendas
 - validações de formulários com JS
   -   login
 - validações de formulários com JS
@@ -23,14 +25,18 @@
 
 ## TEST
 
+## DONE
+- Enviar dados do form com PHP
+  - printar na tela
+    - produtos
+    - clientes
+    - fornecedores
+
 - Gerar código para criar tabelas SQL:
   - vendas
   - produtos
   - clientes
   - fornecedores.
-
-
-## DONE
 - Realizar conexão com Banco de Dados SQL
 - validações de formulários com JS
   -   produtos

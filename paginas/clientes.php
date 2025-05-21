@@ -13,7 +13,7 @@
 	<main>
 		<h1>Cadastre um cliente</h1>
 		<a href="../index.php">Voltar ao inicio</a>
-		<form action="" method="" onsubmit="return valida_clientes()">
+		<form action="" method="POST" onsubmit="return valida_clientes()">
 			<label>Código:</label>
 			<input type="text"disabled value="0" name="codigo_cliente" id="codigo-cliente">
 
