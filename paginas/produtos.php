@@ -48,9 +48,6 @@
 
 
 <?php
-require_once "./config.php";
-conexaoDB();
-
 if(isset($_POST["cadastrar"])){
 	$nome_produto = $_POST['nome_produto'];
 	$est_min_produto = $_POST['estoque_minimo'];
@@ -63,6 +60,10 @@ if(isset($_POST["cadastrar"])){
 	echo $est_max_produto . "<br>";
 	echo $valor_unit_produto . "<br>";
 	echo $qtade_produto . "<br>";
+	
+	require_once "./config.php";
+	conexaoDB();
+
 }
 
 

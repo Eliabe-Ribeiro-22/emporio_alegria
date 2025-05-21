@@ -45,8 +45,6 @@
 </html>
 
 <?php
-require_once "./config.php";
-conexaoDB();
 
 if(isset($_POST["cadastrar"])){
 	$nome_cliente = $_POST['nome_cliente'];
@@ -60,6 +58,10 @@ if(isset($_POST["cadastrar"])){
 	echo $telefone_cliente . "<br>";
 	echo $email_cliente . "<br>";
 	echo $cidade_cliente . "<br>";
+
+	require_once "config.php";
+	conexaoDB();
+
 }
 
 ?>

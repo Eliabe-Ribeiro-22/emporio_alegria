@@ -33,8 +33,6 @@
 </body>
 </html>
 <?php
-require_once "config.php";
-conexaoDB();
 
 if (isset($_POST['cadastrar'])) {
 	$nome_fornecedor = $_POST['nome_fornecedor'];
@@ -44,6 +42,9 @@ if (isset($_POST['cadastrar'])) {
 	echo $nome_fornecedor . "<br>";
 	echo $email_fornecedor . "<br>";
 	echo $telefone_fornecedor . "<br>";
+	require_once "config.php";
+	conexaoDB();
+
 
 }
 
