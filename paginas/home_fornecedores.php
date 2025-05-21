@@ -2,3 +2,4 @@
 <a href="../index.php">Voltar ao início</a>
 
 FORNECEDORES CADASTRADOS
+trash: 🗑
