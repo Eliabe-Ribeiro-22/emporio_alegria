@@ -8,11 +8,14 @@
 		//$password= "1234";
 
 		try{
-			$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+			return $produtos = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 			echo "conexão com sucesso";
 
+		$_SESSION['produtos'] = $produtos;
+
 		}catch(PDOException $pe){
-			die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
+			//die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
+			return("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
 		}
 }
 

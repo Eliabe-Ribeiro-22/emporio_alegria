@@ -18,36 +18,45 @@ edit: &#9998;
 // pesquisar todos os dados com o id
 // exibir dados do produto no form alterar_produtos.php
 
-// SELECT * FROM PRODUTOS;
 // SELECT NOME_PRODUTO, VALOR UNITÁRIO, QUANTIDADE ORDER BY NOME_PRODUTO ASC
-$host = "localhost";
-		$dbname = "alegria";
-		$username = "root";
-		$password= "";
-		//$username = "emporio";
-		//$password= "1234";
+function conexaoDB(){
+	$host = "localhost";
+	$dbname = "alegria";
+	$username = "root";
+	$password= "";
+	//$username = "emporio";
+	//$password= "1234";
+	try{
+		return $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+		echo "conexão com sucesso";
+	}catch(PDOException $pe){
+		die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
+	}
+}
 
 try{
-	$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+
+	$conn2 = conexaoDB();
+
 	echo "string de conexão com sucesso.olhe o enter";
 
+
 	$sql = "SELECT NOME_PRODUTO, VALOR_UNITARIO, QUANTIDADE FROM PRODUTOS";
-	$result = $conn->query($sql);
+	$result = $conn2->query($sql);
 
-	var_dump($result);
-	//if($result->num_rows() > 0){
-	//if($result > 0){
-		//while ($row = $result->fetch_assoc()) {
-			//echo "id: " . $row["ID_PRODUTO"] . "<br>Nome:"; 
-		//}
-//}
-//	else{
-//		echo "0 results";
-//	}
+	var_dump($result->num_rows);
+	if($result->num_rows() > 0){
+		while ($row = $result->fetch_assoc()) {
+		echo "id: " . $row["ID_PRODUTO"] . "<br>Nome:"; 
+		}
+	}
+	else{
+		echo "0 results";
+	}
 
-//	$conn->close();
-
+	$conn->close();
 		}catch(PDOException $pe){
 	die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
 	}
+
 ?>
