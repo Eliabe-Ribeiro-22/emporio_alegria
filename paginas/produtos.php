@@ -56,13 +56,16 @@ if(isset($_POST["cadastrar"])){
 	$est_min_produto = $_POST['estoque_minimo'];
 	$est_max_produto = $_POST['estoque_maximo'];
 	$valor_unit_produto = $_POST['valor_unitario'];
-	$qtade_produto = $_POST['qtdade'];
+	$qtdade_produto = $_POST['qtdade'];
 
 	echo $nome_produto . "<br>";
 	echo $est_min_produto . "<br>";
 	echo $est_max_produto . "<br>";
 	echo $valor_unit_produto . "<br>";
-	echo $qtade_produto . "<br>";
+	echo $qtdade_produto . "<br>";
+
+	// INSERT INTO PRODUTOS(NOME_PRODUTO, ESTOQUE_MINIMO_PRODUTO, ESTOQUE_MAXIMO_PRODUTO, VALOR_UNITARIO, QUANTIDADE) 
+	//VALUES($nome_produto, $est_min_produto, $est_max_produto, $valor_unit_produto, $qtdade_produto)
 }
 
 
