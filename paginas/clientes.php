@@ -60,6 +60,10 @@ if(isset($_POST["cadastrar"])){
 	echo $telefone_cliente . "<br>";
 	echo $email_cliente . "<br>";
 	echo $cidade_cliente . "<br>";
+
+	// INSERT INTO CLIENTES(NOME_CLIENTE, ENDERECO_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE) VALUES (
+	// $nome_cliente, $endereco_cliente, $telefone_cliente, $emaiL_cliente, $cidade_cliente
+	)
 }
 
 ?>
