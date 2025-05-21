@@ -3,3 +3,4 @@
 
 PRODUTOS CADASTRADOS
 trash: 🗑
+edit: &#9998;
