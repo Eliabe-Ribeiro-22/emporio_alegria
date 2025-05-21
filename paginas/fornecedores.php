@@ -45,6 +45,8 @@ if (isset($_POST['cadastrar'])) {
 	echo $email_fornecedor . "<br>";
 	echo $telefone_fornecedor . "<br>";
 
+	// INSERTO INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR) 
+	// VALUES($nome_fornecedor, $email_fornecedor, $telefone_fornecedor)
 }
 
 ?>
