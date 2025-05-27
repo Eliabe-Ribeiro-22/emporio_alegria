@@ -31,11 +31,10 @@ try{
 
 	if($result){
 		foreach ($result as $key => $value) {
-			echo $key;
-			echo $value[0];
+			echo $value["NOME_PRODUTO"];
+			echo $value["VALOR_UNITARIO"];
+			echo $value["QUANTIDADE"];
 		}
-		
-		
 	}
 	else{
 		echo "0 results";
