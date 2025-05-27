@@ -55,42 +55,38 @@ if(isset($_POST["cadastrar"])){
 	$valor_unit_produto = $_POST['valor_unitario'];
 	$qtdade_produto = $_POST['qtdade'];
 
-	$_SESSION['produtos'] = [
-		$nome_produto, 
-		$est_min_produto, 
-		$est_max_produto, 
-		$valor_unit_produto, 
-		$qtdade_produto];
-	
-
 	echo $nome_produto . "<br>";
 	echo $est_min_produto . "<br>";
 	echo $est_max_produto . "<br>";
 	echo $valor_unit_produto . "<br>";
 	echo $qtdade_produto . "<br>";
 	
-	//require_once "./config.php";
 	try{
-	require_once "./config.php";
-	$conn = conexaoDBPRODUTOS();
-	echo "conexao bem sucedida. bora incluir";
 	//link projeto referencia: https://github.com/Eliabe-Ribeiro-22/e21-22-php-curso/blob/main/PHP-028-046_SQLite3/index.php
 	
 
-	$produtos = $_SESSION['produtos'];
 	// string conexao
-	echo "string de conexão com sucesso";
+	require_once './config.php';
+	$conexao = conexaoDB();
 
 	// inserir novo cadastro
 	$sql = 
-		'INSERT INTO PRODUTOS(NOME_PRODUTO, ESTOQUE_MINIMO, ESTOQUE_MAXIMO, VALOR_UNITARIO, QUANTIDADE)' . 
+		'INSERT INTO PRODUTOS(
+			NOME_PRODUTO, 
+			ESTOQUE_MINIMO, 
+			ESTOQUE_MAXIMO, 
+			VALOR_UNITARIO, 
+			QUANTIDADE)' 
+		. 
 		'VALUES(
-			:NOME_PRODUTO, :ESTOQUE_MINIMO, :ESTOQUE_MAXIMO, :VALOR_UNITARIO, :QUANTIDADE)';
-	echo "sql ok";
+			:NOME_PRODUTO, 
+			:ESTOQUE_MINIMO, 
+			:ESTOQUE_MAXIMO, 
+			:VALOR_UNITARIO, 
+			:QUANTIDADE)
+		';
 	
-
-	$tmp = $conn->prepare($sql);
-	echo "deu certo";
+	$tmp = $conexao->prepare($sql);
 	$tmp->execute([ 
 		':NOME_PRODUTO' => $nome_produto, 
 		':ESTOQUE_MINIMO' => $est_min_produto,
@@ -99,15 +95,16 @@ if(isset($_POST["cadastrar"])){
 		':QUANTIDADE' => $qtdade_produto,
 	]);
 	echo "produto cadastrado no banco com sucesso";
-	unset($produtos);
-	unset($_SESSION['produtos']);
+	unset($conexao);
 
 	}catch (PDOException $e) {
-        // status da operacao de insercao de dados no SQLITE3
+        // status da operacao de insercao de dados no SQL
         $status = false;
+        echo "erro ao cadastrar";
     } catch (Exception $e) {
-        // status da operacao de insercao de dados no SQLITE3
+        // status da operacao de insercao de dados no SQL
         $status = false;
+        echo "erro ao cadastrar";
     }
 }
 ?>

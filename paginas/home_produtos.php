@@ -7,7 +7,6 @@ trash: 🗑
 edit: &#9998;
 
 <?php
-
 //deseja realmente excluir o cliente? SIM OU Não 
 // SQL DELETE FROM CLIENTES WHERE ID = id_produto_selected=[$key]
 // se erro, informar mensagem ao usuário
@@ -21,18 +20,19 @@ edit: &#9998;
 // SELECT NOME_PRODUTO, VALOR UNITÁRIO, QUANTIDADE ORDER BY NOME_PRODUTO ASC
 
 try{
-	require_once "config.php";
-	$conn = conexaoDBPRODUTOS();
-
+	require_once './config.php';
+	$conexao = conexaoDB();
+	
 	echo "string de conexão com sucesso.olhe o enter";
 
 
 	$sql = "SELECT NOME_PRODUTO, VALOR_UNITARIO, QUANTIDADE FROM PRODUTOS";
-	$result = $conn->query($sql);
+	$result = $conexao->query($sql);
 
 	if($result){
 		foreach ($result as $key => $value) {
 			echo $key;
+			echo $value[0];
 		}
 		
 		
