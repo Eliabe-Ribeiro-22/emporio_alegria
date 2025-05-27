@@ -26,5 +26,6 @@
 </html>
 <?php
 require_once "./paginas/config.php";
-conexaoDB();
+conexaoDBPRODUTOS();
+conexaoDBFORNECEDORES();
 ?>

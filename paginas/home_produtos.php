@@ -19,42 +19,28 @@ edit: &#9998;
 // exibir dados do produto no form alterar_produtos.php
 
 // SELECT NOME_PRODUTO, VALOR UNITÁRIO, QUANTIDADE ORDER BY NOME_PRODUTO ASC
-function conexaoDB(){
-	$host = "localhost";
-	$dbname = "alegria";
-	$username = "root";
-	$password= "";
-	//$username = "emporio";
-	//$password= "1234";
-	try{
-		return $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-		echo "conexão com sucesso";
-	}catch(PDOException $pe){
-		die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
-	}
-}
 
 try{
-
-	$conn2 = conexaoDB();
+	require_once "config.php";
+	$conn = conexaoDBPRODUTOS();
 
 	echo "string de conexão com sucesso.olhe o enter";
 
 
 	$sql = "SELECT NOME_PRODUTO, VALOR_UNITARIO, QUANTIDADE FROM PRODUTOS";
-	$result = $conn2->query($sql);
+	$result = $conn->query($sql);
 
-	var_dump($result->num_rows);
-	if($result->num_rows() > 0){
-		while ($row = $result->fetch_assoc()) {
-		echo "id: " . $row["ID_PRODUTO"] . "<br>Nome:"; 
+	if($result){
+		foreach ($result as $key => $value) {
+			echo $key;
 		}
+		
+		
 	}
 	else{
 		echo "0 results";
 	}
 
-	$conn->close();
 		}catch(PDOException $pe){
 	die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
 	}

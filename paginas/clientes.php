@@ -60,7 +60,7 @@ if(isset($_POST["cadastrar"])){
 	echo $cidade_cliente . "<br>";
 
 	require_once "config.php";
-	conexaoDB();
+	conexaoDBCLIENTES();
 
 }
 

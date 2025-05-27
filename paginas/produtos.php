@@ -55,6 +55,14 @@ if(isset($_POST["cadastrar"])){
 	$valor_unit_produto = $_POST['valor_unitario'];
 	$qtdade_produto = $_POST['qtdade'];
 
+	$_SESSION['produtos'] = [
+		$nome_produto, 
+		$est_min_produto, 
+		$est_max_produto, 
+		$valor_unit_produto, 
+		$qtdade_produto];
+	
+
 	echo $nome_produto . "<br>";
 	echo $est_min_produto . "<br>";
 	echo $est_max_produto . "<br>";
@@ -64,13 +72,16 @@ if(isset($_POST["cadastrar"])){
 	//require_once "./config.php";
 	try{
 	require_once "./config.php";
-	$produtos = return conexaoDBPRODUTOS();
-		$produtos = $_SESSION['produtos'];
+	$conn = conexaoDBPRODUTOS();
+	echo "conexao bem sucedida. bora incluir";
+	//link projeto referencia: https://github.com/Eliabe-Ribeiro-22/e21-22-php-curso/blob/main/PHP-028-046_SQLite3/index.php
+	
+
+	$produtos = $_SESSION['produtos'];
 	// string conexao
 	echo "string de conexão com sucesso";
 
-	// inserir novo cadstra
-	//$sql = "INSERT INTO PRODUTOS(NOME_PRODUTO, ESTOQUE_MINIMO, ESTOQUE_MAXIMO, VALOR_UNITARIO, QUANTIDADE) VALUES(" . $nome_produto . "," . $est_min_produto . ","  . $est_max_produto . "," $valor_unit_produto. ","  . $qtdade_produto. ")";
+	// inserir novo cadastro
 	$sql = 
 		'INSERT INTO PRODUTOS(NOME_PRODUTO, ESTOQUE_MINIMO, ESTOQUE_MAXIMO, VALOR_UNITARIO, QUANTIDADE)' . 
 		'VALUES(
@@ -78,44 +89,25 @@ if(isset($_POST["cadastrar"])){
 	echo "sql ok";
 	
 
-	$tmp = $pessoas->prepare($sql);
-
+	$tmp = $conn->prepare($sql);
+	echo "deu certo";
 	$tmp->execute([ 
-		':NOME_PRODUTO' = $nome_produto, 
-		':ESTOQUE_MINIMO' = $est_min_produto,
-		':ESTOQUE_MAXIMO' = $est_max_produto,
-		':VALOR_UNITARIO' = $valor_unit_produto,
-		':QUANTIDADE' = $qtdade_produto,
+		':NOME_PRODUTO' => $nome_produto, 
+		':ESTOQUE_MINIMO' => $est_min_produto,
+		':ESTOQUE_MAXIMO' => $est_max_produto,
+		':VALOR_UNITARIO' => $valor_unit_produto,
+		':QUANTIDADE' => $qtdade_produto,
 	]);
 	echo "produto cadastrado no banco com sucesso";
 	unset($produtos);
-	unset($_SESSION['produtos'])
+	unset($_SESSION['produtos']);
 
-	$status = true;
-	 catch (PDOException $e) {
+	}catch (PDOException $e) {
         // status da operacao de insercao de dados no SQLITE3
         $status = false;
     } catch (Exception $e) {
         // status da operacao de insercao de dados no SQLITE3
         $status = false;
     }
-
-    $resultado =  ['nome' => $nome, 'status' => $status];
-    return $resultado;
-
-
-
-	//VALUES($nome_produto, $est_min_produto, $est_max_produto, $valor_unit_produto, $qtdade_produto)";
-	//$result = $conn->query($sql);
-	///echo "produto cadastrado com sucesso";
-	}	catch(PDOException $pe){
-		echo "problema ao cadastrar";
-
-	}
-
-	// INSERT INTO PRODUTOS(NOME_PRODUTO, ESTOQUE_MINIMO_PRODUTO, ESTOQUE_MAXIMO_PRODUTO, VALOR_UNITARIO, QUANTIDADE) 
-	//VALUES($nome_produto, $est_min_produto, $est_max_produto, $valor_unit_produto, $qtdade_produto)
 }
-
-
 ?>
