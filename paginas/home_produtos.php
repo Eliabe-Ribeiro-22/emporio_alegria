@@ -18,7 +18,7 @@ PRODUTOS CADASTRADOS
 // SELECT NOME_PRODUTO, VALOR UNITÁRIO, QUANTIDADE ORDER BY NOME_PRODUTO ASC
 
 try{
-	require_once './config.php';
+	require_once './../config/config.php';
 	$conexao = conexaoDB();
 	
 	echo "string de conexão com sucesso. <BR>";

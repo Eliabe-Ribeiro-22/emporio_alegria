@@ -18,7 +18,7 @@ CLIENTES CADASTRADOS
 // exibir dados do cliente no form alterar_clientes.php
 
 try{
-	require_once './config.php';
+	require_once './../config/config.php';
 	$conexao = conexaoDB();
 	
 	echo "string de conexão com sucesso. <BR>";

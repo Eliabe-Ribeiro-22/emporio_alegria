@@ -62,7 +62,7 @@ if(isset($_POST["cadastrar"])){
 	// INSERT INTO CLIENTES(NOME_CLIENTE, ENDERECO_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE) VALUES (
 	// $nome_cliente, $endereco_cliente, $telefone_cliente, $emaiL_cliente, $cidade_cliente
 
-	require_once "./config.php";
+	require_once "./../config/config.php";
 	$conn = conexaoDB();
 	$sql = 'INSERT INTO CLIENTES(NOME_CLIENTE, ENDERECO_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE)' . 'VALUES (:NOME_CLIENTE, :ENDERECO_CLIENTE, :TELEFONE_CLIENTE, :EMAIL_CLIENTE, :CIDADE_CLIENTE)';
 	$tmp = $conn->prepare($sql);

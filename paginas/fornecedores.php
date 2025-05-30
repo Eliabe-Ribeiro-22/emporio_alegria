@@ -44,7 +44,7 @@ if (isset($_POST['cadastrar'])) {
 	echo $telefone_fornecedor . "<br>";
 	
 	try{
-		require_once "config.php";
+		require_once "./../config/config.php";
 		$conn = conexaoDB();
 		$sql = 'INSERT INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR)'.'VALUES(:NOME_FORNECEDOR, :EMAIL_FORNECEDOR, :TELEFONE_FORNECEDOR )';
 		$tmp = $conn->prepare($sql);
