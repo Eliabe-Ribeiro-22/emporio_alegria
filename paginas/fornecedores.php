@@ -42,11 +42,31 @@ if (isset($_POST['cadastrar'])) {
 	echo $nome_fornecedor . "<br>";
 	echo $email_fornecedor . "<br>";
 	echo $telefone_fornecedor . "<br>";
-	require_once "config.php";
-	conexaoDBFORNECEDORES();
+	
+	try{
+		require_once "config.php";
+		$conn = conexaoDB();
+		$sql = 'INSERT INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR)'.'VALUES(:NOME_FORNECEDOR, :EMAIL_FORNECEDOR, :TELEFONE_FORNECEDOR )';
+		$tmp = $conn->prepare($sql);
+		$tmp->execute([
+			':NOME_FORNECEDOR' => $nome_fornecedor,
+			':EMAIL_FORNECEDOR' => $email_fornecedor,
+			':TELEFONE_FORNECEDOR' => $telefone_fornecedor
+		]);
+	
+	}catch (PDOException $e) {
+        // status da operacao de insercao de dados no SQL
+        $status = false;
+        echo "erro ao cadastrar" . $e;
+    } catch (Exception $e) {
+        // status da operacao de insercao de dados no SQL
+        $status = false;
+        echo "erro ao cadastrar" . $e;
+    }
 
+	
 
-	// INSERTO INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR) 
+	// INSERT INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR) 
 	// VALUES($nome_fornecedor, $email_fornecedor, $telefone_fornecedor)
 }
 

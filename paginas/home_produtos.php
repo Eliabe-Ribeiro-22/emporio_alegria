@@ -23,7 +23,7 @@ try{
 	require_once './config.php';
 	$conexao = conexaoDB();
 	
-	echo "string de conexão com sucesso.olhe o enter";
+	echo "string de conexão com sucesso. <BR>";
 
 
 	$sql = "SELECT NOME_PRODUTO, VALOR_UNITARIO, QUANTIDADE FROM PRODUTOS";
@@ -31,9 +31,9 @@ try{
 
 	if($result){
 		foreach ($result as $key => $value) {
-			echo $value["NOME_PRODUTO"];
-			echo $value["VALOR_UNITARIO"];
-			echo $value["QUANTIDADE"];
+			echo "O nome do produto é: " . $value["NOME_PRODUTO"] . "<BR>";
+			echo "O valor unitário do produto é: ".  $value["VALOR_UNITARIO"] . "<BR>";
+			echo "A quantidade do produto" . $value["QUANTIDADE"] . "<BR>";
 		}
 	}
 	else{

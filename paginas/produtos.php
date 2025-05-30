@@ -15,7 +15,7 @@
 	<a href="../index.php">Voltar ao inicio</a>
 	<form action="" method="POST" onsubmit="return valida_produtos()">
 		<label>Código:</label>
-		<input type="text"disabled value="0" name="codigo_produto" id="codigo-produto">
+		<input type="text"disabled value="1" name="codigo_produto" id="codigo-produto">
 	
 		<label>Nome:</label>
 		<input type="text"  name="nome_produto" id="nome-produto">
@@ -48,6 +48,7 @@
 
 
 <?php
+session_start();
 if(isset($_POST["cadastrar"])){
 	$nome_produto = $_POST['nome_produto'];
 	$est_min_produto = $_POST['estoque_minimo'];
@@ -67,32 +68,21 @@ if(isset($_POST["cadastrar"])){
 
 	// string conexao
 	require_once './config.php';
-	$conexao = conexaoDB();
+	$conn = conexaoDB();
 
 	// inserir novo cadastro
 	$sql = 
-		'INSERT INTO PRODUTOS(
-			NOME_PRODUTO, 
-			ESTOQUE_MINIMO, 
-			ESTOQUE_MAXIMO, 
-			VALOR_UNITARIO, 
-			QUANTIDADE)' 
-		. 
-		'VALUES(
-			:NOME_PRODUTO, 
-			:ESTOQUE_MINIMO, 
-			:ESTOQUE_MAXIMO, 
-			:VALOR_UNITARIO, 
-			:QUANTIDADE)
-		';
+		'INSERT INTO PRODUTOS(NOME_PRODUTO, ESTOQUE_MINIMO, ESTOQUE_MAXIMO, VALOR_UNITARIO, QUANTIDADE)'.'VALUES(:NOME_PRODUTO, :ESTOQUE_MINIMO, :ESTOQUE_MAXIMO, :VALOR_UNITARIO, :QUANTIDADE)';
 	
-	$tmp = $conexao->prepare($sql);
+
+	$tmp = $conn->prepare($sql);
+	echo "deu certo";
 	$tmp->execute([ 
 		':NOME_PRODUTO' => $nome_produto, 
 		':ESTOQUE_MINIMO' => $est_min_produto,
 		':ESTOQUE_MAXIMO' => $est_max_produto,
 		':VALOR_UNITARIO' => $valor_unit_produto,
-		':QUANTIDADE' => $qtdade_produto,
+		':QUANTIDADE' => $qtdade_produto
 	]);
 	echo "produto cadastrado no banco com sucesso";
 	unset($conexao);
@@ -100,11 +90,11 @@ if(isset($_POST["cadastrar"])){
 	}catch (PDOException $e) {
         // status da operacao de insercao de dados no SQL
         $status = false;
-        echo "erro ao cadastrar";
+        echo "erro ao cadastrar" . $e;
     } catch (Exception $e) {
         // status da operacao de insercao de dados no SQL
         $status = false;
-        echo "erro ao cadastrar";
+        echo "erro ao cadastrar" . $e;
     }
 }
 ?>

@@ -59,7 +59,8 @@ if(isset($_POST["cadastrar"])){
 	echo $email_cliente . "<br>";
 	echo $cidade_cliente . "<br>";
 
-
+	require_once "./config.php";
+	$conn = conexaoDB();
 }
 
 ?>

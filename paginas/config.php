@@ -4,9 +4,7 @@
 		$dbname = "alegria";
 		$username = "root";
 		$password= "";
-		//$username = "emporio";
-		//$password= "1234";
-
+		
 		try{
 			return $conexao = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 			echo "conexão com sucesso";

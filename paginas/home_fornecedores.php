@@ -2,8 +2,9 @@
 <a href="../index.php">Voltar ao início</a>
 
 FORNECEDORES CADASTRADOS
-<?php
 trash: 🗑
+
+<?php
 
 //deseja realmente excluir o cliente? SIM OU Não 
 // SQL DELETE FROM CLIENTES WHERE ID = id_produto_selected=[$key]
