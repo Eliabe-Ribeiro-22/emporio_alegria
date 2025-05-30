@@ -4,16 +4,16 @@
 		$dbname = "alegria";
 		$username = "root";
 		$password= "";
-		//$username = "emporio";
-		//$password= "1234";
-
+		
 		try{
-			$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+			return $conexao = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 			echo "conexão com sucesso";
 
+		$_SESSION['conexao'] = $conexao;
+
 		}catch(PDOException $pe){
-			die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
+			//die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
+			return("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
 		}
 }
-
 ?>
