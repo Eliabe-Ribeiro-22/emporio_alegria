@@ -15,7 +15,7 @@
 	<a href="../index.php">Voltar ao inicio</a>
 	<form action="" method="POST" onsubmit="return valida_produtos()">
 		<label>Código:</label>
-		<input type="text"disabled value="1" name="codigo_produto" id="codigo-produto">
+		<input type="text"disabled value="0" name="codigo_produto" id="codigo-produto">
 	
 		<label>Nome:</label>
 		<input type="text"  name="nome_produto" id="nome-produto">

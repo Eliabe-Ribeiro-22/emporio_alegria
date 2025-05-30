@@ -53,6 +53,7 @@ if (isset($_POST['cadastrar'])) {
 			':EMAIL_FORNECEDOR' => $email_fornecedor,
 			':TELEFONE_FORNECEDOR' => $telefone_fornecedor
 		]);
+		echo "fornecedor cadastrado com sucesso";
 	
 	}catch (PDOException $e) {
         // status da operacao de insercao de dados no SQL
