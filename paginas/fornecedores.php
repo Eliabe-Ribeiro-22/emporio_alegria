@@ -64,11 +64,6 @@ if (isset($_POST['cadastrar'])) {
         $status = false;
         echo "erro ao cadastrar" . $e;
     }
-
-	
-
-	// INSERT INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR) 
-	// VALUES($nome_fornecedor, $email_fornecedor, $telefone_fornecedor)
 }
 
 ?>
