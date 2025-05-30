@@ -64,7 +64,6 @@ if(isset($_POST["cadastrar"])){
 
 	require_once "./config.php";
 	$conn = conexaoDB();
->>>>>>> dev
 }
 
 ?>

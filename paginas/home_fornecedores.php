@@ -19,7 +19,6 @@ trash: 🗑
 // exibir dados do fornecedor no form alterar_fornecedores.php
 
 
-// SELECT * from FORNECEDORES ORDER by NOME_FORNCEDOR ASC
 // SELECT NOME_FORNECEDOR, TELEFONE_FORNECEDOR, EMAIL_FORNECEDOR FROM FORNECEDORES ORDER BY NOME_FORNECEDOR_ASC
 try{
 	require_once './config.php';
