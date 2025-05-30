@@ -3,8 +3,6 @@
 
 PRODUTOS CADASTRADOS
 
-trash: 🗑
-edit: &#9998;
 
 <?php
 //deseja realmente excluir o cliente? SIM OU Não 
@@ -34,6 +32,7 @@ try{
 			echo "O nome do produto é: " . $value["NOME_PRODUTO"] . "<BR>";
 			echo "O valor unitário do produto é: ".  $value["VALOR_UNITARIO"] . "<BR>";
 			echo "A quantidade do produto" . $value["QUANTIDADE"] . "<BR>";
+			echo "&#9998" . "🗑" .  "<BR>";
 		}
 	}
 	else{
