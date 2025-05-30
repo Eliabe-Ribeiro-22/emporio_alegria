@@ -45,8 +45,6 @@
 </html>
 
 <?php
-require_once "./config.php";
-conexaoDB();
 
 if(isset($_POST["cadastrar"])){
 	$nome_cliente = $_POST['nome_cliente'];
@@ -63,7 +61,10 @@ if(isset($_POST["cadastrar"])){
 
 	// INSERT INTO CLIENTES(NOME_CLIENTE, ENDERECO_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE) VALUES (
 	// $nome_cliente, $endereco_cliente, $telefone_cliente, $emaiL_cliente, $cidade_cliente
-	)
+
+	require_once "./config.php";
+	$conn = conexaoDB();
+>>>>>>> dev
 }
 
 ?>

@@ -25,6 +25,7 @@
 </body>
 </html>
 <?php
+session_start();
 require_once "./paginas/config.php";
 conexaoDB();
 ?>
