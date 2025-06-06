@@ -36,6 +36,7 @@ try{
 			echo "&#9998" . "🗑" .  "<BR>";
 		}
 	}
+	$conn->close();
 	else{
 		echo "0 results";
 	}

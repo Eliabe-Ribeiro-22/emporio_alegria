@@ -19,13 +19,13 @@ PRODUTOS CADASTRADOS
 
 try{
 	require_once './../../config/config.php';
-	$conexao = conexaoDB();
+	$conn = conexaoDB();
 	
 	echo "string de conexão com sucesso. <BR>";
 
 
-	$sql = "SELECT NOME_PRODUTO, VALOR_UNITARIO, QUANTIDADE FROM PRODUTOS";
-	$result = $conexao->query($sql);
+	$sql = 'SELECT NOME_PRODUTO, VALOR_UNITARIO, QUANTIDADE FROM PRODUTOS';
+	$result = $conn->query($sql);
 
 	if($result){
 		foreach ($result as $key => $value) {
@@ -35,6 +35,7 @@ try{
 			echo "&#9998" . "🗑" .  "<BR>";
 		}
 	}
+	$conn->close();
 	else{
 		echo "0 results";
 	}
