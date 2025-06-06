@@ -17,18 +17,21 @@ trash: 🗑
 // armazenar id
 // pesquisar todos os dados com o id
 // exibir dados do fornecedor no form alterar_fornecedores.php
-	if($_SERVER['REQUEST_METHOD'] == "DELETE"	){
+if(isset($_POST['excluir_fornecedor'])){
 		try{
-			require_once "./../../confg/config.php";
+			require_once "./../../config/config.php";
 			$conn = conexaoDB();
-			$sql = "DELETE FROM FORNECEDORES" .  "WHERE FORNECEDOR_ID = 1 ";
+			echo "connection com sucesso";
+			$sql = "DELETE FROM FORNECEDORES WHERE FORNECEDORES.ID_FORNECEDOR = 3 ";
 			$tmp = $conn->query($sql);
 			echo "registro excluído com sucesso";
-		}catch(PDOException $pe){
-			die("Problema ao excluir um registro. Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
+		}catch(Exception $e){
+			die("Problema ao excluir um registro." . $e);
 		}
 
 }
+
+
 // SELECT NOME_FORNECEDOR, TELEFONE_FORNECEDOR, EMAIL_FORNECEDOR FROM FORNECEDORES ORDER BY NOME_FORNECEDOR_ASC
 try{
 	require_once './../../config/config.php';
@@ -42,18 +45,17 @@ try{
 
 	if($result){
 		foreach ($result as $key => $value) {
+			echo "id_fornecdor é: ".  $key;
 			echo "O nome do fornecedor é: " . $value["NOME_FORNECEDOR"] . "<BR>";
 			echo "O telefone do fornecedor é: " . $value["TELEFONE_FORNECEDOR"] . "<BR>";
 			echo "O email do fornecedor é: ".  $value["EMAIL_FORNECEDOR"] . "<BR>";
-			echo "&#9998" . "<form method='DELETE'><a href=''>🗑" . "</a><BR></form>";
+			echo "&#9998" . "<form method='POST'><button name='excluir_fornecedor'>🗑" . "</a><BR></form>";
 		}
 	}
-	conn->close();
 	else{
 		echo "0 results";
 	}
-
-		}catch(PDOException $pe){
+}catch(PDOException $pe){
 	die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
 	}
 

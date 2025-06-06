@@ -85,8 +85,6 @@ if(isset($_POST["cadastrar"])){
 		':QUANTIDADE' => $qtdade_produto
 	]);
 	echo "produto cadastrado no banco com sucesso";
-	unset($conexao);
-	$conn->close();
 	}catch (PDOException $e) {
         // status da operacao de insercao de dados no SQL
         $status = false;

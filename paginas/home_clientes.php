@@ -19,13 +19,13 @@ CLIENTES CADASTRADOS
 
 try{
 	require_once './../../config/config.php';
-	$conexao = conexaoDB();
+	$conn = conexaoDB();
 	
 	echo "string de conexão com sucesso. <BR>";
 
 
 	$sql = "SELECT NOME_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE from CLIENTES";
-	$result = $conexao->query($sql);
+	$result = $conn->query($sql);
 
 	if($result){
 		foreach ($result as $key => $value) {
@@ -36,13 +36,11 @@ try{
 			echo "&#9998" . "🗑" .  "<BR>";
 		}
 	}
-	$conn->close();
 	else{
 		echo "0 results";
 	}
-
-		}catch(PDOException $pe){
-	die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
+		}catch(Exception $e){
+	die("Não foi possivel se conectar ao banco de dados " . $e);
 	}
 
 ?>

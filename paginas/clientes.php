@@ -73,7 +73,6 @@ if(isset($_POST["cadastrar"])){
 		':EMAIL_CLIENTE' => $email_cliente,
 		':CIDADE_CLIENTE' => $cidade_cliente
 	]);
-	$conn->close();
 	echo "cliente cadastrado com sucesso";
 }
 

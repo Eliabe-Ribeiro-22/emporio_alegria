@@ -35,11 +35,10 @@ try{
 			echo "&#9998" . "🗑" .  "<BR>";
 		}
 	}
-	$conn->close();
+
 	else{
 		echo "0 results";
 	}
-
 		}catch(PDOException $pe){
 	die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
 	}
