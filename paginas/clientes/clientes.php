@@ -12,7 +12,7 @@
 	
 	<main>
 		<h1>Cadastre um cliente</h1>
-		<a href="../index.php">Voltar ao inicio</a>
+		<a href="../../index.php">Voltar ao inicio</a>
 		<form action="" method="POST" onsubmit="return valida_clientes()">
 			<label>Código:</label>
 			<input type="text"disabled value="0" name="codigo_cliente" id="codigo-cliente">
@@ -39,7 +39,7 @@
 	
 	<footer>
 		rodapé
-	<script type="text/javascript" src="../assets/js/clientes.js"></script>		
+	<script type="text/javascript" src="../../assets/js/clientes.js"></script>		
 	</footer>
 </body>
 </html>
@@ -62,7 +62,7 @@ if(isset($_POST["cadastrar"])){
 	// INSERT INTO CLIENTES(NOME_CLIENTE, ENDERECO_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE) VALUES (
 	// $nome_cliente, $endereco_cliente, $telefone_cliente, $emaiL_cliente, $cidade_cliente
 
-	require_once "./../../config/config.php";
+	require_once "./../../../config/config.php";
 	$conn = conexaoDB();
 	$sql = 'INSERT INTO CLIENTES(NOME_CLIENTE, ENDERECO_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE)' . 'VALUES (:NOME_CLIENTE, :ENDERECO_CLIENTE, :TELEFONE_CLIENTE, :EMAIL_CLIENTE, :CIDADE_CLIENTE)';
 	$tmp = $conn->prepare($sql);

@@ -12,7 +12,7 @@
 
 	<main>
 		<h1>Cadastre um fornecedor</h1>
-		<a href="../index.php">Voltar ao inicio</a>
+		<a href="../../index.php">Voltar ao inicio</a>
 		<form action="" method="POST" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>
 			<input type="text"disabled value="0" name="codigo-fornecedor" id="codigo_fornecedor">
@@ -44,7 +44,7 @@ if (isset($_POST['cadastrar'])) {
 	echo $telefone_fornecedor . "<br>";
 	
 	try{
-		require_once "./../../config/config.php";
+		require_once "./../../../config/config.php";
 		$conn = conexaoDB();
 		$sql = 'INSERT INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR)'.'VALUES(:NOME_FORNECEDOR, :EMAIL_FORNECEDOR, :TELEFONE_FORNECEDOR )';
 		$tmp = $conn->prepare($sql);

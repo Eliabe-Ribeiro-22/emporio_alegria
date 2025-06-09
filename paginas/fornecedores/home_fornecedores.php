@@ -1,9 +1,8 @@
 <a href="./fornecedores.php">Cadastrar novo fornecedor</a>
-<a href="../index.php">Voltar ao início</a>
+<a href="../../index.php">Voltar ao início</a>
 
 
 FORNECEDORES CADASTRADOS
-trash: 🗑
 
 <?php
 
@@ -19,7 +18,7 @@ trash: 🗑
 // exibir dados do fornecedor no form alterar_fornecedores.php
 if(isset($_POST['excluir_fornecedor'])){
 		try{
-			require_once "./../../config/config.php";
+			require_once "./../../../config/config.php";
 			$conn = conexaoDB();
 			echo "connection com sucesso";
 			$sql = "DELETE FROM FORNECEDORES WHERE FORNECEDORES.ID_FORNECEDOR = 4 ";
@@ -34,7 +33,7 @@ if(isset($_POST['excluir_fornecedor'])){
 
 // SELECT NOME_FORNECEDOR, TELEFONE_FORNECEDOR, EMAIL_FORNECEDOR FROM FORNECEDORES ORDER BY NOME_FORNECEDOR_ASC
 try{
-	require_once './../../config/config.php';
+	require_once './../../../config/config.php';
 	$conn = conexaoDB();
 	
 	echo "string de conexão com sucesso. <BR>";
@@ -59,5 +58,6 @@ try{
 	die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
 	}
 
-
+// ver como passa o parametro id para a função excluir cliete, fornecedor e produto
+	// ver trabalho denize e21
 ?>

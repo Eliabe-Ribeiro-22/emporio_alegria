@@ -20,7 +20,7 @@ PRODUTOS CADASTRADOS
 
 if(isset($_POST['excluir_produto'])){
 		try{
-			require_once "./../../config/config.php";
+			require_once "./../../../config/config.php";
 			$conn = conexaoDB();
 			echo "connection com sucesso";
 			$sql = "DELETE FROM PRODUTOS WHERE PRODUTOS.ID_PRODUTO = 2";
@@ -34,7 +34,7 @@ if(isset($_POST['excluir_produto'])){
 
 
 try{
-	require_once './../../config/config.php';
+	require_once './../../../config/config.php';
 	$conn = conexaoDB();
 	
 	echo "string de conexão com sucesso. <BR>";
