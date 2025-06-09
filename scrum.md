@@ -174,7 +174,19 @@
 ## **SPRINT 8** Eliabe
 - Fazer dados no input HTMl serem salvos no Banco de Dados
 
-## **SPRINT 9** Eliabe
+## **SPRINT 9**
+- fazer dados serem excluídos via html
+  - produtos
+  - clientes
+  - fornecedores
+
+## **SPRINT 10**
+- fazer dados serem alterados via html
+  - produtos
+  - clientes
+  - fornecedores
+
+## **SPRINT 11** Eliabe
 - Criação dos styles do site com CSS
    -   venda
    -   produtos
@@ -182,10 +194,10 @@
    -   fornecedores
    -   login
 
-## **SPRINT 11** Eliabe
+## **SPRINT 12** Eliabe
   - Responsividade CSS
 
-## **SPRINT 12** Eliabe
+## **SPRINT 13** Eliabe
 - Testes de homologação
 - Entrega final do site ao cliente
 

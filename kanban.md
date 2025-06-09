@@ -3,7 +3,6 @@
 ## TO DO
 - Fazer dados no input HTMl serem salvos no Banco de Dados
   - vendas
-
 - validações de formulários com JS
   -   login
 - validações de formulários com JS
@@ -19,15 +18,23 @@
     - quatidade_produto
 
 ## DOING
-- Fazer dados no input HTMl serem salvos no Banco de Dados
-  - fornecedores
-  - clientes
+- fazer dados serem alterados via html
   - produtos
-
+  - clientes
+  - fornecedores
 
 ## TEST
 
 ## DONE
+- fazer dados serem excluídos via html
+  - produtos
+  - clientes
+  - fornecedores
+
+- Fazer dados no input HTMl serem salvos no Banco de Dados
+  - fornecedores
+  - clientes
+  - produtos
 - Enviar dados do form com PHP
   - printar na tela
     - produtos
