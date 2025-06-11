@@ -1,5 +1,5 @@
 <?php
-function salvar_fornecedor($nome_fornecedor, $email_fornecedor, $telefone_fornecedor){
+function salvar_fornecedor($nome_fornecedor="Junior", $email_fornecedor="junior@gmail.com", $telefone_fornecedor="49988477611"){
 	if (isset($_POST['cadastrar'])) {
 	
 		try{

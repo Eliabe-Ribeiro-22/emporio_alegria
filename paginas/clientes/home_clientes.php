@@ -48,7 +48,7 @@ try{
 			echo "<a href='" . $value["ID_CLIENTE"] . "'>" . $value["ID_CLIENTE"] . "</a>";
 			echo "O nome do cliente é: " . $value["NOME_CLIENTE"] . "<BR>";
 			echo "O telefone do cliente é: ".  $value["TELEFONE_CLIENTE"] . "<BR>";
-			echo "O email do cliente é" . $value["EMAIL_CLIENTE"] . "<BR>";
+			echo "O email do cliente é: " . $value["EMAIL_CLIENTE"] . "<BR>";
 			echo "A cidade do cliente é: " . $value["CIDADE_CLIENTE"] . "<BR>";
 			echo "&#9998" . "<form method='POST'><button name='excluir_cliente'>🗑" . "</button><BR></form>";
 		}

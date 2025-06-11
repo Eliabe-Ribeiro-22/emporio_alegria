@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 		echo "chamar func salvar_fornecedor";
 		salvar_fornecedor($nome_fornecedor, $telefone_fornecedor, $email_fornecedor);
 
-		header("refresh: 5; home_fornecedores.php");
+		header("refresh: 3; home_fornecedores.php");
 	}
 }
 ?>
