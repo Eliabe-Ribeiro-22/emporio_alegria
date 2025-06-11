@@ -101,3 +101,48 @@ HTML, CSS, JS, PHP e MySQL
 ![Página Produtos](./assets/img/imagens_projeto/home_produtos.png)
 ![Página Clientes](./assets/img/imagens_projeto/home_clientes.png)
 ![Página Fornecedores](./assets/img/imagens_projeto/home_fornecedores.png)
+
+## **Log de Eventos**
+
+
+### 10/06
+- Criação de repositório Github
+- Feito Git clone
+- Criadas branch dev, html, js, php_w_sql
+- entregue release de versão do sistema: 1.0, 2.0, 3.0, 4.0, 5.0
+- criado banco de dados 
+- criado código SQL de criação de tabelas
+  - clientes
+  - produtos
+  - fornecedores
+- criado código SQL para SELECT, INSERT, DELETE das tabelas:
+  - clientes
+  - produtos
+  - fornecedores
+
+### 11/06 - Eliabe
+- entregue release: 6.0
+- Criada pasta com funções php que interagem com banco de Dados MySQL
+- modificação de caminhos e pastas do projeto. Agora está organizado em:
+  - index.php
+  - app:
+    - assets
+      - css
+      - js
+    - funcoes_php
+    - paginas
+    - clientes
+    - fornecedores
+    - produtos
+    - vendas
+    - sql
+      - create_table
+      - delete
+      - insert
+      - update
+
+- feature inserir produtos, clientes, fornecedores através de HTML que interage com Js, PHP e vai ao MySQL
+- criação de funções para listar e inserir dados de clientes, fornecedores e produtos
+- modulação de código
+
+    
