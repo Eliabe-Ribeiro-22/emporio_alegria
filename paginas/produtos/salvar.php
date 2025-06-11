@@ -17,6 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	echo $qtdade_produto . "<br>";
 	
 	require_once "../../funcoes_php/salvar_produto.php";
+	echo "chamar func salvar_produto";
 	salvar_produto();
 	header("refresh: 3; home_produtos.php");
 }

@@ -13,7 +13,7 @@
 <main>
 	<h1>Cadastrar Produto</h1>
 	<a href="../../index.php">Voltar ao inicio</a>
-	<form action="" method="POST" onsubmit="return valida_produtos()">
+	<form action="./salvar.php" method="POST" onsubmit="return valida_produtos()">
 		<label>Código:</label>
 		<input type="text"disabled value="0" name="codigo_produto" id="codigo-produto">
 	
