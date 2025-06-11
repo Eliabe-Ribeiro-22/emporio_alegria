@@ -4,7 +4,7 @@ function salvar_fornecedor($nome_fornecedor="Junior", $email_fornecedor="junior@
 	if (isset($_POST['cadastrar'])) {
 	
 		try{
-			require_once "./../../../config/config.php";
+			require_once "./../../../../config/config.php";
 			$conn = conexaoDB();
 			$sql = 'INSERT INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR)'.'VALUES(:NOME_FORNECEDOR, :EMAIL_FORNECEDOR, :TELEFONE_FORNECEDOR )';
 			$tmp = $conn->prepare($sql);

@@ -12,7 +12,7 @@
 
 	<main>
 		<h1>Cadastre um fornecedor</h1>
-		<a href="../../index.php">Voltar ao inicio</a>
+		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./salvar.php" method="POST" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>
 			<input type="text"disabled value="0" name="codigo-fornecedor" id="codigo_fornecedor">
@@ -29,7 +29,7 @@
 			
 			<input type="submit" value="cadastrar" name="cadastrar">
 		</form>
-		<script type="text/javascript" src="../assets/js/fornecedores.js"></script>
+		<script type="text/javascript" src="../../assets/js/fornecedores.js"></script>
 	</main>
 </body>
 </html>

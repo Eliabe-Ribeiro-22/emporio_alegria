@@ -10,7 +10,7 @@ function salvar_produto($nome_produto="Cebola", $est_min_produto="1", $est_max_p
 			echo $qtdade_produto . "<br>";
 		
 			// string conexao
-			require_once './../../../config/config.php';
+			require_once './../../../../config/config.php';
 			$conn = conexaoDB();
 
 			// inserir novo cadastro

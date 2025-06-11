@@ -4,7 +4,7 @@ session_start();
 function listar(){
 // SELECT NOME_FORNECEDOR, TELEFONE_FORNECEDOR, EMAIL_FORNECEDOR FROM FORNECEDORES ORDER BY NOME_FORNECEDOR_ASC
 try{
-	require_once './../../../config/config.php';
+	require_once './../../../../config/config.php';
 	$conn = conexaoDB();
 
 	echo "string de conexão com sucesso. <BR>";

@@ -3,7 +3,7 @@ session_start();
 
 if(isset($_POST['excluir_fornecedor'])){
 		try{
-			require_once "./../../../config/config.php";
+			require_once "./../../../../config/config.php";
 			$conn = conexaoDB();
 			echo "connection com sucesso";
 			$sql = "DELETE FROM FORNECEDORES WHERE FORNECEDORES.ID_FORNECEDOR = 1 ";

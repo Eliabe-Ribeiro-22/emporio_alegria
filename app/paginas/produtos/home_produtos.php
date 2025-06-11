@@ -1,5 +1,5 @@
 <a href="./produtos.php">Cadastrar novo produto</a>
-<a href="../../index.php">Voltar ao início</a>
+<a href="../../../index.php">Voltar ao início</a>
 
 PRODUTOS CADASTRADOS
 
@@ -23,7 +23,7 @@ session_start();
 
 if(isset($_POST['excluir_produto'])){
 		try{
-			require_once "./../../../config/config.php";
+			require_once "./../../../../config/config.php";
 			$conn = conexaoDB();
 			echo "connection com sucesso";
 			$sql = "DELETE FROM PRODUTOS WHERE PRODUTOS.ID_PRODUTO = 2";

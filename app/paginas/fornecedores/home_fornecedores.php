@@ -1,5 +1,5 @@
 <a href="./fornecedores.php">Cadastrar novo fornecedor</a>
-<a href="../../index.php">Voltar ao início</a>
+<a href="../../../index.php">Voltar ao início</a>
 
 
 FORNECEDORES CADASTRADOS
@@ -19,6 +19,6 @@ session_start();
 
 
 
-require_once "listar_fornecedores.php";
+require_once "./listar_fornecedores.php";
 listar_fornecedores();
 ?>

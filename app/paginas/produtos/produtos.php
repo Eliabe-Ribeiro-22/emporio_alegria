@@ -12,7 +12,7 @@
 
 <main>
 	<h1>Cadastrar Produto</h1>
-	<a href="../../index.php">Voltar ao inicio</a>
+	<a href="../../../index.php">Voltar ao inicio</a>
 	<form action="./salvar.php" method="POST" onsubmit="return valida_produtos()">
 		<label>Código:</label>
 		<input type="text"disabled value="0" name="codigo_produto" id="codigo-produto">
@@ -41,7 +41,7 @@
 <footer>
 	rodapé.
 	All rights reserved.2025-2025. Eliabe Ribeiro Mota.
-	<script type="text/javascript"src="../assets/js/produtos.js"></script>
+	<script type="text/javascript"src="../../assets/js/produtos.js"></script>
 </footer>
 </body>
 </html>
