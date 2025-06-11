@@ -35,6 +35,7 @@ if(isset($_POST['excluir_produto'])){
 
 }
 
-
+require_once "./listar_produtos.php";
+listar_produtos();
 
 ?>
