@@ -13,9 +13,9 @@
 	<main>
 		<h1>Cadastre um cliente</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
-		<form action="./salvar.php" method="POST" onsubmit="return valida_clientes()">
+		<form action="./salvar.php" method="get" onsubmit="return valida_clientes()">
 			<label>Código:</label>
-			<input type="text"disabled value="0" name="codigo_cliente" id="codigo-cliente">
+			<input type="text"disabled value="10" name="codigo_cliente" id="codigo-cliente">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_cliente" id="nome-cliente">
@@ -39,7 +39,7 @@
 	
 	<footer>
 		rodapé
-	<script type="text/javascript" src="../../../assets/js/clientes.js"></script>		
+	<script type="text/javascript" src="../../assets/js/clientes.js"></script>		
 	</footer>
 </body>
 </html>

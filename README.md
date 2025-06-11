@@ -119,7 +119,11 @@ HTML, CSS, JS, PHP e MySQL
   - clientes
   - produtos
   - fornecedores
-
+- criado HTML das páginas
+  - clientes
+  - produtos
+  - fornecedores
+- criado validações com JavaScript
 ### 11/06 - Eliabe
 - entregue release: 6.0
 - Criada pasta com funções php que interagem com banco de Dados MySQL

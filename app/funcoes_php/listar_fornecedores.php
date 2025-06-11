@@ -22,7 +22,7 @@ try{
 			echo "O nome do fornecedor é: " . $value["NOME_FORNECEDOR"] . "<BR>";
 			echo "O telefone do fornecedor é: " . $value["TELEFONE_FORNECEDOR"] . "<BR>";
 			echo "O email do fornecedor é: ".  $value["EMAIL_FORNECEDOR"] . "<BR>";
-			echo "&#9998" . "<form method='POST'><button name='excluir_fornecedor'>🗑" . "</button><BR></form>";
+			echo "&#9998" . "<form  method='POST' action='excluir_fornecedor.php' >" . "<input name='id_fornecedor' value='" . $value['ID_FORNECEDOR'] . "'> <button name='excluir_fornecedor'>🗑" . "</button><BR></form>";
 		}
 	} 
 
