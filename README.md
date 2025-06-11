@@ -125,6 +125,7 @@ HTML, CSS, JS, PHP e MySQL
   - fornecedores
 - criado validações com JavaScript
 ### 11/06 - Eliabe
+- função deletar fornecedor por id usando MySQL, PHP, HTML
 - entregue release: 6.0
 - Criada pasta com funções php que interagem com banco de Dados MySQL
 - modificação de caminhos e pastas do projeto. Agora está organizado em:
