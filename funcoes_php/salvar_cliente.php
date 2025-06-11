@@ -1,11 +1,5 @@
 <?php
 function salvar_cliente($nome_cliente = "Eliabe", $endereco_cliente="30 de marco", $telefone_cliente = "49988426048", $email_cliente="eliabe@gmail.com", $cidade_cliente="pan"){
-
-		echo $nome_cliente . "<br>";
-		echo $endereco_cliente . "<br>";
-		echo $telefone_cliente . "<br>";
-		echo $email_cliente . "<br>";
-		echo $cidade_cliente . "<br>";
 	
 		// INSERT INTO CLIENTES(NOME_CLIENTE, ENDERECO_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE) VALUES (
 	// $nome_cliente, $endereco_cliente, $telefone_cliente, $emaiL_cliente, $cidade_cliente
