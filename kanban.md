@@ -18,6 +18,8 @@
     - quatidade_produto
 
 ## DOING
+- preencher por get(FUNCTION)
+- limpar formularios html ao inserir e alterar
 - fazer dados serem alterados via html
   - produtos
   - clientes
