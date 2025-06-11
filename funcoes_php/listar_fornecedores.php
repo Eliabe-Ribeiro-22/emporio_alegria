@@ -12,7 +12,10 @@ try{
 
 	$result = $conn->query($sql);
 
-	if($result > 0){
+	if(!$result){
+		echo "0 results";
+	}
+	else if($result){
 		foreach ($result as $key => $value) {
 			echo "<a href='" . $value["ID_FORNECEDOR"] . "'>" . $value["ID_FORNECEDOR"] . "</a>";
 			echo "O nome do fornecedor é: " . $value["NOME_FORNECEDOR"] . "<BR>";
@@ -20,10 +23,7 @@ try{
 			echo "O email do fornecedor é: ".  $value["EMAIL_FORNECEDOR"] . "<BR>";
 			echo "&#9998" . "<form method='POST'><button name='excluir_fornecedor'>🗑" . "</button><BR></form>";
 		}
-	} else{
-	echo "0 results";
-	}
-
+	} 
 
 	}catch(PDOException $pe){
 		die("Não foi possivel se conectar ao banco de dados $dbname :" . $pe->getMessage());
