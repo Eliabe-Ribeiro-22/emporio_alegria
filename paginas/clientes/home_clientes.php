@@ -43,7 +43,7 @@ try{
 	$sql = "SELECT ID_CLIENTE, NOME_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE from CLIENTES";
 	$result = $conn->query($sql);
 
-	if($result){
+	if($result > 0){
 		foreach ($result as $key => $value) {
 			echo "<a href='" . $value["ID_CLIENTE"] . "'>" . $value["ID_CLIENTE"] . "</a>";
 			echo "O nome do cliente é: " . $value["NOME_CLIENTE"] . "<BR>";

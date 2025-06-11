@@ -43,7 +43,7 @@ try{
 	$sql = 'SELECT ID_PRODUTO, NOME_PRODUTO, VALOR_UNITARIO, QUANTIDADE FROM PRODUTOS';
 	$result = $conn->query($sql);
 
-	if($result){
+	if($result > 0){
 		foreach ($result as $key => $value) {
 			echo "<a href='" . $value["ID_PRODUTO"] . "'>" . $value["ID_PRODUTO"] . "</a>";
 			echo "O nome do produto é: " . $value["NOME_PRODUTO"] . "<BR>";
