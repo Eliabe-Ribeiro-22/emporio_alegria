@@ -3,7 +3,8 @@
 
 CLIENTES CADASTRADOS
 
-<?php 
+<?php
+session_start(); 
 //	SELECT NOME_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE from CLIENTES order by NOME_CLIENTE_asc
 
 //deseja realmente excluir o cliente? SIM OU Não 

@@ -19,15 +19,32 @@
 
 ## DOING
 - preencher por get(FUNCTION)
-- limpar formularios html ao inserir e alterar
+- modular e funcao delete 
+  - cliente
+  - produto
+  - fornecedor
+
 - fazer dados serem alterados via html
   - produtos
   - clientes
   - fornecedores
 
+  - modular e funcao alterar
+    - cliente
+    - fornecedor
+    - produto
+
 ## TEST
 
 ## DONE
+- modular e funcao insert
+  - cliente
+  - produto
+  - fornecedor
+- modular e funcao listar 
+  - cliente
+  - produto
+  - fornecedor
 - fazer dados serem excluídos via html
   - produtos
   - clientes

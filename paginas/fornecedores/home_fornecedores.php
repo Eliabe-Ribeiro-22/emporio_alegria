@@ -5,6 +5,7 @@
 FORNECEDORES CADASTRADOS
 
 <?php
+session_start();
 
 //deseja realmente excluir o cliente? SIM OU Não 
 // SQL DELETE FROM CLIENTES WHERE ID = id_produto_selected=[$key]
@@ -16,19 +17,6 @@ FORNECEDORES CADASTRADOS
 // pesquisar todos os dados com o id
 // exibir dados do fornecedor no form alterar_fornecedores.php
 
-if(isset($_POST['excluir_fornecedor'])){
-		try{
-			require_once "./../../../config/config.php";
-			$conn = conexaoDB();
-			echo "connection com sucesso";
-			$sql = "DELETE FROM FORNECEDORES WHERE FORNECEDORES.ID_FORNECEDOR = 1 ";
-			$tmp = $conn->query($sql);
-			echo "registro excluído com sucesso";
-		}catch(Exception $e){
-			die("Problema ao excluir um registro." . $e);
-		}
-
-}
 
 
 require_once "listar_fornecedores.php";

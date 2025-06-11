@@ -1,4 +1,5 @@
 <?php
+session_start();
 function listar(){
 	try{
 		require_once './../../../config/config.php';
