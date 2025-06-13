@@ -22,6 +22,10 @@ let qtdade_produto = document.querySelector("#qtdade").value;
 		est_max_produto.focus();
 		return false;
 	}
+	if(est_min_produto >= est_max_produto){
+		alert("o Estoque Máximo precisa ser maior que o Estoque Mínimo");
+		return false;
+	}
 	if (valor_unit_produto == "" || valor_unit_produto == "0") {
 		alert("Informe o valor unitario");
 		valor_unit.focus();
@@ -31,7 +35,7 @@ let qtdade_produto = document.querySelector("#qtdade").value;
 		alert("Informe a quantidade");
 		qtdade.focus();
 		return false;
-	}	
+	}
 
 	alert("Todos os dados foram preenchidos com sucesso");
 	return true;
