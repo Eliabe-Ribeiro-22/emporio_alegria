@@ -1,6 +1,6 @@
 <?php 
 session_start();
-function excluir($id=0){
+function excluir($id){
 	if(isset($_POST['excluir_fornecedor'])){
 		try{
 			require_once "./../../../../config/config.php";
