@@ -10,17 +10,16 @@ function listar(){
 		$sql = 'SELECT ID_PRODUTO, NOME_PRODUTO, VALOR_UNITARIO, QUANTIDADE FROM PRODUTOS';
 		$result = $conn->query($sql);
 
-		if(!$result){
-			echo "0 results";
-		}
-		else if ($result){
+		if (isset($result)){
 			foreach ($result as $key => $value) {
-				echo "<a href='" . $value["ID_PRODUTO"] . "'>" . $value["ID_PRODUTO"] . "</a>";
+				//echo "<a href='" . $value["ID_PRODUTO"] . "'>" . $value["ID_PRODUTO"] . "</a>";
 				echo "O nome do produto é: " . $value["NOME_PRODUTO"] . "<BR>";
 				echo "O valor unitário do produto é: ".  $value["VALOR_UNITARIO"] . "<BR>";
 				echo "A quantidade do produto" . $value["QUANTIDADE"] . "<BR>";
 				echo "&#9998" . "<form  method='POST' action='excluir_produto.php' >" . "<input name='id_produto' value='" . $value['ID_PRODUTO'] . "'> <button name='excluir_produto'>🗑" . "</button><BR></form>";
 			}
+		}else{
+		echo "Não há clientes cadastrados. <a href='../paginas/clientes/clientes.php'>Cadastre um agora mesmo</a>!";
 		}
 			
 

@@ -19,7 +19,9 @@
     - quatidade_produto
 
 ## DOING
-
+- tratamento de erros
+  - usuario não autorizado
+  - 0 results
 - preencher por get(FUNCTION)
 - modular e funcao delete 
   - cliente

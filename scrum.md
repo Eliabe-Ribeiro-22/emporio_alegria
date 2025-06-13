@@ -4,6 +4,9 @@
 
 ## **Backlog do projeto**
 - Criar README DO PROJETO
+- tratamento de erros
+  - usuario não autorizado
+  - 0 results
 - Criar páginas no FIGMA
   - inicial
   - vendas
@@ -179,6 +182,9 @@
   - produtos
   - clientes
   - fornecedores
+- tratamento de erros
+  - usuario não autorizado
+  - 0 results
 
 ## **SPRINT 10**
 - fazer dados serem alterados via html
