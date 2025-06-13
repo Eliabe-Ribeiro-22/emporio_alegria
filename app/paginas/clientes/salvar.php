@@ -2,9 +2,8 @@
 session_start();
 
 if($_SERVER['REQUEST_METHOD'] == "GET"){
-	//echo "usuário não autorizado";
-	$id_cliente = $_GET['codigo_cliente'];
-	echo $id_cliente;
+	echo "usuário não autorizado";
+	header("refresh: 0; ../../../index.php");
 }
 else if($_SERVER['REQUEST_METHOD'] == "POST"){
 	echo "salvar cliente";

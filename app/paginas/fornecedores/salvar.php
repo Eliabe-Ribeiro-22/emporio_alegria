@@ -2,6 +2,7 @@
 session_start();
 if($_SERVER['REQUEST_METHOD'] == "GET"){
 	echo "usuário não autorizado";
+	header("refresh: 0; ../../../index.php");
 }
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 	echo "salvar fornecedor";

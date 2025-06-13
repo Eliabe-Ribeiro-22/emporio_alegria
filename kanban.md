@@ -1,6 +1,7 @@
-## Kanban emporio_alegria
+## **Kanban emporio_alegria**
 
 ## TO DO
+
 - Fazer dados no input HTMl serem salvos no Banco de Dados
   - vendas
 - validações de formulários com JS
@@ -18,18 +19,17 @@
     - quatidade_produto
 
 ## DOING
+
 - preencher por get(FUNCTION)
 - modular e funcao delete 
   - cliente
   - produto
   - fornecedor
-
 - fazer dados serem alterados via html
   - produtos
   - clientes
   - fornecedores
-
-  - modular e funcao alterar
+- modular e funcao alterar
     - cliente
     - fornecedor
     - produto
@@ -37,6 +37,7 @@
 ## TEST
 
 ## DONE
+
 - modular e funcao insert
   - cliente
   - produto
@@ -49,7 +50,6 @@
   - produtos
   - clientes
   - fornecedores
-
 - Fazer dados no input HTMl serem salvos no Banco de Dados
   - fornecedores
   - clientes
@@ -59,7 +59,6 @@
     - produtos
     - clientes
     - fornecedores
-
 - Gerar código para criar tabelas SQL:
   - vendas
   - produtos
@@ -98,7 +97,6 @@
     - nome_empresa
     - email
     - telefone
-
 - Gerar HTML das páginas:
   - inicial
 - Criar página inicial, que direciona para vendas, produtos, clientes, fornecedores.
