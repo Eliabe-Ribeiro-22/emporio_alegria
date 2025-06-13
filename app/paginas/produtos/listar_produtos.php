@@ -1,6 +1,4 @@
 <?php 
-session_start();
-
 function listar_produtos(){
 	try{
 		require_once "../../funcoes_php/listar_produtos.php";
