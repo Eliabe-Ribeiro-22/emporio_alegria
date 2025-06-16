@@ -11,7 +11,7 @@
 	</header>
 
 	<main>
-		<h1>Cadastre um fornecedor</h1>
+		<h1>Edite um fornecedor</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./atualizar_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>

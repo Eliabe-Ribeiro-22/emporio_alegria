@@ -11,7 +11,7 @@
 </header>
 
 <main>
-	<h1>Cadastrar Produto</h1>
+	<h1>Editar Produto</h1>
 	<a href="../../../index.php">Voltar ao inicio</a>
 	<form action="./salvar.php" method="POST" onsubmit="return valida_produtos()">
 		<label>Código:</label>

@@ -11,7 +11,7 @@
 	</header>
 	
 	<main>
-		<h1>Cadastre um cliente</h1>
+		<h1>Edite um cliente</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./salvar.php" method="POST" onsubmit="return valida_clientes()">
 			<label>Código:</label>
