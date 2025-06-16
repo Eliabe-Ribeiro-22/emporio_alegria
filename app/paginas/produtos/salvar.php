@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	
 	require_once "../../funcoes_php/salvar_produto.php";
 	echo "chamar func salvar_produto";
-	salvar_produto();
+	salvar_produto($nome_produto, $est_min_produto, $est_min_produto, $valor_unit_produto, $qtdade_produto);
 	header("refresh: 3; home_produtos.php");
 }
 ?>
