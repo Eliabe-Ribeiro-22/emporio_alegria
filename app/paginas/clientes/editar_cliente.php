@@ -14,10 +14,18 @@
 		<?php 
 		$id_cliente = $_GET['id'];
 		echo "id é: " .  $id_cliente;	
-		//sql = select * from clientes where id_cliente = $id_cliente
+		//sql = select * from clientes where id_cliente = $id_cliente	
 		
 		require_once "../../funcoes_php/pesquisar_cliente.php";
-		pesquisa_cliente($id_cliente);
+		$cliente = pesquisa_cliente($id_cliente);
+		foreach ($cliente as $key => $value) {
+			echo "ID DO CLIENTE É: " .  $value["ID_CLIENTE"];
+			echo "Nome do Cliente é: ". $value["NOME_CLIENTE"];
+			echo "ENDERECO DO CLIENTE É: " . $value["ENDERECO_CLIENTE"];
+			echo "TELEFONE DO CLIENTE É: " . $value["TELEFONE_CLIENTE"];
+			echo "EMAIL DO CLIENTE É: " . $value["EMAIL_CLIENTE"];
+			echo "CIDADE DO CLIENTE É: " . $value["CIDADE_CLIENTE"];
+		}
 		 
 		?>
 		<h1>Edite um cliente</h1>

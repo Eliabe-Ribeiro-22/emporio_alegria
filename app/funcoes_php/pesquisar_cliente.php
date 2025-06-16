@@ -6,10 +6,12 @@ function pesquisa_cliente($id_cliente){
 	
 		echo "string de conexão com sucesso. <BR>";
 
-		$sql = "select * from clientes where id_cliente = $id_fornecedor";
+		$sql = 'SELECT * FROM clientes WHERE id_cliente = :ID_CLIENTE';
 		$tmp = $conn->prepare($sql);
 		$tmp->execute([ "ID_CLIENTE" => $id_cliente,
 		]);
+		echo "usuário pesquisado com sucesso";
+		return $tmp;
 	}catch(PDOException $e){
 		echo "problema ao pesquisar_cliente";
 	}
