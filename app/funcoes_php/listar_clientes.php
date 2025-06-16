@@ -16,7 +16,7 @@ function listar(){
 				echo "O telefone do cliente é: ".  $value["TELEFONE_CLIENTE"] . "<BR>";
 				echo "O email do cliente é: " . $value["EMAIL_CLIENTE"] . "<BR>";
 				echo "A cidade do cliente é: " . $value["CIDADE_CLIENTE"] . "<BR>";
-				echo "<a href='editar_cliente.php'>" . "&#9998" . "</a>";
+				echo "<a href='editar_cliente.php?id=". $value["ID_CLIENTE"] . "'>" . "&#9998" . "</a>";
 				echo "<form  method='POST' action='excluir_cliente.php' >" . "<input name='id_cliente' value='" . $value["ID_CLIENTE"] . "'> <button name='excluir_cliente'>🗑" . "</button><BR></form>";
 			}
 		}else{

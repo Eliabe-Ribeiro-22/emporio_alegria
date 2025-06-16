@@ -11,6 +11,7 @@
 </header>
 
 <main>
+	<?php echo "id é: " .  $_GET['id'];	 ?>
 	<h1>Editar Produto</h1>
 	<a href="../../../index.php">Voltar ao inicio</a>
 	<form action="./salvar.php" method="POST" onsubmit="return valida_produtos()">
