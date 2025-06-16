@@ -11,7 +11,12 @@
 </header>
 
 <main>
-	<?php echo "id é: " .  $_GET['id'];	 ?>
+	<?php 
+	$id_produto = $_GET['id'];
+	echo "id é: " .  $id_produto;
+	//sql = select * from produtos where id_produto = $id_produto
+		
+	?>
 	<h1>Editar Produto</h1>
 	<a href="../../../index.php">Voltar ao inicio</a>
 	<form action="./salvar.php" method="POST" onsubmit="return valida_produtos()">

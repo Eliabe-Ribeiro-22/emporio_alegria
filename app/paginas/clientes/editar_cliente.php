@@ -11,7 +11,15 @@
 	</header>
 	
 	<main>
-		<?php echo "id é: " .  $_GET['id'];	 ?>
+		<?php 
+		$id_cliente = $_GET['id'];
+		echo "id é: " .  $id_cliente;	
+		//sql = select * from clientes where id_cliente = $id_cliente
+		
+		require_once "../../funcoes_php/pesquisar_cliente.php";
+		pesquisa_cliente($id_cliente);
+		 
+		?>
 		<h1>Edite um cliente</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./salvar.php" method="POST" onsubmit="return valida_clientes()">

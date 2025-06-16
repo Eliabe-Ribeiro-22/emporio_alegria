@@ -11,7 +11,12 @@
 	</header>
 
 	<main>
-		<?php echo "id é: " .  $_GET['id'];	 ?>
+		<?php 
+		$id_fornecedor = $_GET['id'];
+		echo "id é: " .  $id_fornecedor;	 
+		//sql = select * from fornecedores where id_fornecedor = $id_fornecedor
+		
+		?>
 		<h1>Edite um fornecedor</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./atualizar_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">
