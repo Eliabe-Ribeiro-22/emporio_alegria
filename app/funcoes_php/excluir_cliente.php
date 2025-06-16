@@ -12,7 +12,7 @@ function excluir($id){
 		}
 		catch(Exception $e){
 			die("Problema ao excluir um registro." . $e);
-		}
+		}	
 	}
 }
 ?>

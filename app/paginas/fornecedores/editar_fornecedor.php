@@ -27,7 +27,7 @@
 			<input type="email" name="email_fornecedor" id="email-fornecedor">
 
 			
-			<input type="submit" value="atualizar" name="atualizar">
+			<input type="submit" value="editar" name="editar">
 		</form>
 		<script type="text/javascript" src="../../assets/js/fornecedores.js"></script>
 	</main>

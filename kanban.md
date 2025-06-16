@@ -19,14 +19,7 @@
     - quatidade_produto
 
 ## DOING
-- tratamento de erros
-  - usuario não autorizado
-  - 0 results
 - preencher por get(FUNCTION)
-- modular e funcao delete 
-  - cliente
-  - produto
-  - fornecedor
 - fazer dados serem alterados via html
   - produtos
   - clientes
@@ -39,7 +32,13 @@
 ## TEST
 
 ## DONE
-
+- tratamento de erros
+  - usuario não autorizado
+  - 0 results
+- modular e funcao delete 
+  - cliente
+  - produto
+  - fornecedor
 - modular e funcao insert
   - cliente
   - produto

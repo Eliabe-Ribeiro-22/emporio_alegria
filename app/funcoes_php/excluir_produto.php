@@ -6,7 +6,6 @@ function excluir($id){
 			require_once "./../../../../config/config.php";
 			$conn = conexaoDB();
 			echo "connection com sucesso";
-			//$sql = "DELETE FROM FORNECEDORES WHERE FORNECEDORES.ID_FORNECEDOR = " . $id . ";";
 			$sql = "DELETE FROM PRODUTOS WHERE PRODUTOS.ID_PRODUTO = " . $id . ";";
 			$tmp = $conn->query($sql);
 			echo "registro excluído com sucesso";
