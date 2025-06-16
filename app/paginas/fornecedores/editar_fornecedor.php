@@ -11,6 +11,7 @@
 	</header>
 
 	<main>
+		<?php echo "id é: " .  $_GET['id'];	 ?>
 		<h1>Edite um fornecedor</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./atualizar_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">

@@ -150,4 +150,12 @@ HTML, CSS, JS, PHP e MySQL
 - criação de funções para listar e inserir dados de clientes, fornecedores e produtos
 - modulação de código
 
-    
+## 16/06 - Eliabe
+Foi feito o tratamento de erros
+  - usuario não autorizado
+  - 0 results
+Foi feito a modular e funcao delete 
+  - cliente
+  - produto
+  - fornecedor
+
