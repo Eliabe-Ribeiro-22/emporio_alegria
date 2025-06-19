@@ -163,4 +163,5 @@ Foi feito a modular e funcao delete
 - Foi realizado inserção de dados via get para o formulário de edição de clientes, fornecedores e produtos
 - Foi modulado em pastas as funções php com interação de banco de dados
 - Foi alterado todos os caminhos da aplicação visando uma melhor organização e padrão de código
-
+- Foi criada a camada regra de negócios com PHP e chamada de função no HTML para php regra de negócios
+- Foi chamada funcao update_cliente, update_fornecedor, update_produto, cujas função delas é interagir com o banco de dados MySQL para alterar dados nas referidas tabelas
