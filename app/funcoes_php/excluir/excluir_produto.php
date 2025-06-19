@@ -3,7 +3,7 @@ session_start();
 function excluir($id){
 	if(isset($_POST['excluir_produto'])){
 		try{
-			require_once "./../../../../../config/config.php";
+			require_once "./../../../../config/config.php";
 			$conn = conexaoDB();
 			echo "connection com sucesso";
 			$sql = "DELETE FROM PRODUTOS WHERE PRODUTOS.ID_PRODUTO = " . $id . ";";
