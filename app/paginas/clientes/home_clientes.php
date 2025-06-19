@@ -19,7 +19,7 @@ session_start();
 // exibir dados do cliente no form alterar_clientes.php
 if(isset($_POST['excluir_cliente'])){
 		try{
-			require_once "./../../../config/config.php";
+			require_once "./../../../../config/config.php";
 			$conn = conexaoDB();
 			echo "connection com sucesso";
 			$sql = "DELETE FROM CLIENTES WHERE CLIENTES.ID_CLIENTE = 1";

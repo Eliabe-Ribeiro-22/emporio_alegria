@@ -2,7 +2,7 @@
 function listar(){
 // SELECT NOME_FORNECEDOR, TELEFONE_FORNECEDOR, EMAIL_FORNECEDOR FROM FORNECEDORES ORDER BY NOME_FORNECEDOR_ASC
 try{
-	require_once './../../../../../config/config.php';
+	require_once './../../../../config/config.php';
 	$conn = conexaoDB();
 
 	echo "string de conexão com sucesso. <BR>";
@@ -18,7 +18,7 @@ try{
 			echo "O telefone do fornecedor é: " . $value["TELEFONE_FORNECEDOR"] . "<BR>";
 			echo "O email do fornecedor é: ".  $value["EMAIL_FORNECEDOR"] . "<BR>";
 			echo "<a href='editar_fornecedor.php?id=". $value["ID_FORNECEDOR"] . "'>" . "&#9998" . "</a>";
-			echo "<form  method='POST' action='excluir_fornecedor.php' >" . "<input name='id_fornecedor' value='" . $value['ID_FORNECEDOR'] . "'> <button name='excluir_fornecedor'>🗑" . "</button><BR></form>";
+			echo "<form  method='POST' action='../excluir/excluir_fornecedor.php' >" . "<input name='id_fornecedor' value='" . $value['ID_FORNECEDOR'] . "'> <button name='excluir_fornecedor'>🗑" . "</button><BR></form>";
 		}
 	}else{
 		echo "Não há fornecedores cadastrados. <a href='../../paginas/fornecedores/fornecedores.php'>Cadastre um agora mesmo</a>!";

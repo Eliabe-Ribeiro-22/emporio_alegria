@@ -24,6 +24,17 @@ let qtdade_produto = document.querySelector("#qtdade").value;
 	}
 	if(est_min_produto >= est_max_produto){
 		alert("o Estoque Máximo precisa ser maior que o Estoque Mínimo");
+		est_max_produto.focus();
+		return false;
+	}
+	if (est_min_produto >= qtdade_produto) {
+		alert("a quantidade do produto precisa ser maior que estoque mínimo");
+		qtdade_produto.focus();
+		return false;
+	}
+	if (est_max_produto < qtdade_produto) {
+		alert("A quantidade precisa ser menor que o est_max_produto")
+		qtdade_produto.focus();
 		return false;
 	}
 	if (valor_unit_produto == "" || valor_unit_produto == "0") {
@@ -40,3 +51,5 @@ let qtdade_produto = document.querySelector("#qtdade").value;
 	alert("Todos os dados foram preenchidos com sucesso");
 	return true;
 }
+
+valida_produtos();

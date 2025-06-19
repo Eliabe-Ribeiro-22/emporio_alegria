@@ -23,3 +23,4 @@ let telefone_fornecedor = document.querySelector("#telefone-fornecedor").value;
 	alert("Todos os dados foram preenchidos com sucesso");
 	return true;
 }
+valida_fornecedores();
