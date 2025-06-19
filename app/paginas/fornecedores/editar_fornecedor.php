@@ -33,16 +33,16 @@
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./atualizar_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>
-			<input type="text"disabled value="0" name="codigo-fornecedor" id="codigo_fornecedor">
+			<input type="text"disabled value="<?php echo $id_fornecedor ?>" name="codigo-fornecedor" id="codigo_fornecedor">
 
 			<label>Nome:</label>
-			<input type="text" name="nome_fornecedor" id="nome-fornecedor">
+			<input type="text" name="nome_fornecedor" id="nome-fornecedor" value="<?php echo $nome_fornecedor ?>">
 
 			<label>Telefone:</label>
-			<input type="text" name="telefone_fornecedor" id="telefone-fornecedor">
+			<input type="text" name="telefone_fornecedor" id="telefone-fornecedor" value="<?php echo $telefone_fornecedor ?>">
 
 			<label>Email:</label>
-			<input type="email" name="email_fornecedor" id="email-fornecedor">
+			<input type="email" name="email_fornecedor" id="email-fornecedor" value="<?php echo $email_fornecedor ?>">
 
 			
 			<input type="submit" value="editar" name="editar">
