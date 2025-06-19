@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
 }
 else if($_SERVER['REQUEST_METHOD'] == "POST"){
 	echo "deletando fornecedor. Aguarde um momento";
-	require_once "../../funcoes_php/excluir_fornecedor.php";
+	require_once "../../funcoes_php/excluir/excluir_fornecedor.php";
 	$id_fornecedor = $_POST['id_fornecedor'];
 	echo "o id obtido a ser excluido é: " . $id_fornecedor;
 	excluir($id_fornecedor);

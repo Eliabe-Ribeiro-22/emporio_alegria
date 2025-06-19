@@ -13,18 +13,16 @@
 	<main>
 		<?php 
 		$id_fornecedor = $_GET['id'];
-		echo "id é: " .  $id_fornecedor;
-		require_once "../../funcoes_php/pesquisar_fornecedor.php";
+		require_once "../../funcoes_php/pesquisar/pesquisar_fornecedor.php";
 		$fornecedor = pesquisa_fornecedor($id_fornecedor);
 
+		// laço para decompor os dados do fornecedor pesquisado
 		foreach ($fornecedor as $key => $value) {			
 			// armazenando dados em variaveis
 			$id_fornecedor = $value["ID_FORNECEDOR"];
 			$nome_fornecedor = $value["NOME_FORNECEDOR"];
 			$telefone_fornecedor = $value["TELEFONE_FORNECEDOR"];
 			$email_fornecedor = $value["EMAIL_FORNECEDOR"];
-
-			echo $id_fornecedor . $nome_fornecedor . $telefone_fornecedor . $email_fornecedor;
 		}
 
 		

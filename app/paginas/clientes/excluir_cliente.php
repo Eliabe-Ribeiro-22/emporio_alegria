@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
 }
 else if($_SERVER['REQUEST_METHOD'] == "POST"){
 	echo "deletando cliente. Aguarde um momento";
-	require_once "../../funcoes_php/excluir_cliente.php";
+	require_once "../../funcoes_php/excluir/excluir_cliente.php";
 	$id_cliente = $_POST['id_cliente'];
 	echo "o id obtido a ser excluido é: " . $id_cliente;
 	excluir($id_cliente);

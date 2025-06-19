@@ -15,7 +15,7 @@ else if($_SERVER['REQUEST_METHOD'] == "POST"){
 	$email_cliente = $_POST['email_cliente'];
 	$cidade_cliente = $_POST['cidade_cliente'];
 
-	require_once "../../funcoes_php/salvar_cliente.php";
+	require_once "../../funcoes_php/salvar/salvar_cliente.php";
 	echo "chamar func salvar_cliente";
 	salvar_cliente($nome_cliente, $endereco_cliente, $telefone_cliente, $email_cliente, $cidade_cliente);
 	header("refresh: 3; home_clientes.php");

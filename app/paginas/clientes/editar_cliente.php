@@ -13,9 +13,8 @@
 	<main>
 		<?php 
 		$id_cliente = $_GET['id'];
-		echo "id é: " .  $id_cliente;	
 		
-		require_once "../../funcoes_php/pesquisar_cliente.php";
+		require_once "../../funcoes_php/pesquisar/pesquisar_cliente.php";
 		$cliente = pesquisa_cliente($id_cliente);
 		
 		foreach ($cliente as $key => $value) {

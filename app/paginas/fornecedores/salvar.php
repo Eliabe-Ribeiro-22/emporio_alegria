@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 		echo $telefone_fornecedor . "<br>";
 		echo $email_fornecedor . "<br>";
 
-		require_once "../../funcoes_php/salvar_fornecedor.php";
+		require_once "../../funcoes_php/salvar/salvar_fornecedor.php";
 		echo "chamar func salvar_fornecedor";
 		salvar_fornecedor($nome_fornecedor, $telefone_fornecedor, $email_fornecedor);
 

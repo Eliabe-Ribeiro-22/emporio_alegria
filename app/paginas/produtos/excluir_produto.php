@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
 }
 else if($_SERVER['REQUEST_METHOD'] == "POST"){
 	echo "deletando produto. Aguarde um momento";
-	require_once "../../funcoes_php/excluir_produto.php";
+	require_once "../../funcoes_php/excluir/excluir_produto.php";
 	$id_produto = $_POST['id_produto'];
 	echo "o id obtido a ser excluido é: " . $id_produto;
 	excluir($id_produto);

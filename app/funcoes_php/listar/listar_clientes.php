@@ -1,7 +1,7 @@
 <?php
 function listar(){
 	try{
-		require_once './../../../../config/config.php';
+		require_once './../../../../../config/config.php';
 		$conn = conexaoDB();
 	
 		echo "string de conexão com sucesso. <BR>";
@@ -20,7 +20,7 @@ function listar(){
 				echo "<form  method='POST' action='excluir_cliente.php' >" . "<input name='id_cliente' value='" . $value["ID_CLIENTE"] . "'> <button name='excluir_cliente'>🗑" . "</button><BR></form>";
 			}
 		}else{
-		echo "Não há clientes cadastrados. <a href='../paginas/clientes/clientes.php'>Cadastre um agora mesmo</a>!";
+		echo "Não há clientes cadastrados. <a href='../../paginas/clientes/clientes.php'>Cadastre um agora mesmo</a>!";
 		}
 		
 	} catch(Exception $e){
