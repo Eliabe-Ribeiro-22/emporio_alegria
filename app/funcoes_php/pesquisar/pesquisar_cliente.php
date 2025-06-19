@@ -1,7 +1,7 @@
 <?php  
 function pesquisa_cliente($id_cliente){
 	try{
-		require_once './../../../../../config/config.php';
+		require_once './../../../../config/config.php';
 		$conn = conexaoDB();
 	
 		echo "string de conexão com sucesso. <BR>";

@@ -159,3 +159,8 @@ Foi feito a modular e funcao delete
   - produto
   - fornecedor
 
+## 19/06 - Eliabe
+- Foi realizado inserção de dados via get para o formulário de edição de clientes, fornecedores e produtos
+- Foi modulado em pastas as funções php com interação de banco de dados
+- Foi alterado todos os caminhos da aplicação visando uma melhor organização e padrão de código
+
