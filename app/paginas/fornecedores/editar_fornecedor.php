@@ -13,8 +13,20 @@
 	<main>
 		<?php 
 		$id_fornecedor = $_GET['id'];
-		echo "id é: " .  $id_fornecedor;	 
-		//sql = select * from fornecedores where id_fornecedor = $id_fornecedor
+		echo "id é: " .  $id_fornecedor;
+		require_once "../../funcoes_php/pesquisar_fornecedor.php";
+		$fornecedor = pesquisa_fornecedor($id_fornecedor);
+
+		foreach ($fornecedor as $key => $value) {			
+			// armazenando dados em variaveis
+			$id_fornecedor = $value["ID_FORNECEDOR"];
+			$nome_fornecedor = $value["NOME_FORNECEDOR"];
+			$telefone_fornecedor = $value["TELEFONE_FORNECEDOR"];
+			$email_fornecedor = $value["EMAIL_FORNECEDOR"];
+
+			echo $id_fornecedor . $nome_fornecedor . $telefone_fornecedor . $email_fornecedor;
+		}
+
 		
 		?>
 		<h1>Edite um fornecedor</h1>

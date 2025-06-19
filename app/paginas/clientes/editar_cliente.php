@@ -27,14 +27,6 @@
 			$telefone_cliente = $value["TELEFONE_CLIENTE"];
 			$email_cliente = $value["EMAIL_CLIENTE"];
 			$cidade_cliente = $value["CIDADE_CLIENTE"];
-			
-			// printando na tela
-			echo "ID DO CLIENTE É: " . $id_cliente;
-			echo "Nome do Cliente é: ". $nome_cliente;
-			echo "ENDERECO DO CLIENTE É: " . $endereco_cliente;
-			echo "TELEFONE DO CLIENTE É: " . $telefone_cliente;
-			echo "EMAIL DO CLIENTE É: " . $email_cliente;
-			echo "CIDADE DO CLIENTE É: " . $cidade_cliente;
 		}
 		 
 		?>
