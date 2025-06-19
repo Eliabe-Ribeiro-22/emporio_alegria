@@ -29,9 +29,9 @@
 		?>
 		<h1>Edite um fornecedor</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
-		<form action="./atualizar_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">
+		<form action="./update_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>
-			<input type="text"disabled value="<?php echo $id_fornecedor ?>" name="codigo-fornecedor" id="codigo_fornecedor">
+			<input type="text"disabled value="<?php echo $id_fornecedor ?>" name="codigo_fornecedor" id="codigo_fornecedor">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_fornecedor" id="nome-fornecedor" value="<?php echo $nome_fornecedor ?>">

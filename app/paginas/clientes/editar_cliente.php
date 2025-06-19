@@ -31,9 +31,9 @@
 		?>
 		<h1>Edite um cliente</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
-		<form action="./salvar.php" method="POST" onsubmit="return valida_clientes()">
+		<form action="./update_cliente.php" method="POST" onsubmit="return valida_clientes()">
 			<label>Código:</label>
-			<input type="text"disabled value="<?php echo $id_cliente ?>" name="codigo_cliente" id="codigo-cliente">
+			<input type="text"disabled value="<?php echo $id_cliente ?>" name="codigo_cliente" id="codigo_cliente">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_cliente" id="nome-cliente" value="<?php echo $nome_cliente ?>">

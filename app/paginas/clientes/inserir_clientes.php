@@ -15,7 +15,7 @@
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./salvar.php" method="POST" onsubmit="return valida_clientes()">
 			<label>Código:</label>
-			<input type="text"disabled value="0" name="codigo_cliente" id="codigo-cliente">
+			<input type="text"disabled value="0" name="codigo_cliente" id="codigo_cliente">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_cliente" id="nome-cliente">
