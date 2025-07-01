@@ -31,7 +31,7 @@
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./update_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>
-			<input type="text"disabled value="<?php echo $id_fornecedor ?>" name="codigo_fornecedor" id="codigo_fornecedor">
+			<input type="text"disabled value="<?php echo $id_fornecedor ?>" name="id_fornecedor" id="id_fornecedor">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_fornecedor" id="nome-fornecedor" value="<?php echo $nome_fornecedor ?>">

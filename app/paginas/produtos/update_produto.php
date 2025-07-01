@@ -6,13 +6,14 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
 }
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 	echo "usuário autorizado";
-	$id_produto = $_POST['codigo_produto'];
+	$id_produto = $_POST['id_produto'];
 	$nome_produto = $_POST['nome_produto'];
 	$est_min_produto = $_POST['estoque_minimo'];
 	$est_max_produto = $_POST['estoque_maximo'];
 	$valor_unit_produto = $_POST['valor_unitario'];
 	$qtdade_produto = $_POST['qtdade'];
 
+	echo $id_produto .  "<br>";
 	echo $nome_produto . "<br>";
 	echo $est_min_produto . "<br>";
 	echo $est_max_produto . "<br>";

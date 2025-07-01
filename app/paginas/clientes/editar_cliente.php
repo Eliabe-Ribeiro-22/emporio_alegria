@@ -33,7 +33,7 @@
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./update_cliente.php" method="POST" onsubmit="return valida_clientes()">
 			<label>Código:</label>
-			<input type="text"disabled value="<?php echo $id_cliente ?>" name="codigo_cliente" id="codigo_cliente">
+			<input type="text"disabled value="<?php echo $id_cliente ?>" name="id_cliente" id="id_cliente">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_cliente" id="nome-cliente" value="<?php echo $nome_cliente ?>">
@@ -50,7 +50,7 @@
 			<label>Cidade:</label>
 			<input type="text" name="cidade_cliente" id="cidade-cliente" value="<?php echo $cidade_cliente ?>">
 	
-			<input type="submit" value="editar" name="editar">
+			<input type="submit" value="atualizar" name="atualizar">
 		</form>
 	</main>
 	
