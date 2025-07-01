@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 		echo $nome_fornecedor . "<br>";
 		echo $telefone_fornecedor . "<br>";
 		echo $email_fornecedor . "<br>";
-		echo "alterar";
+		echo "alterar" . $id_fornecedor;
 		require_once "../../funcoes_php/alterar/alterar_fornecedor.php";
 		echo "chamar func update_fornecedor";
 		update_fornecedor($nome_fornecedor, $telefone_fornecedor, $email_fornecedor);

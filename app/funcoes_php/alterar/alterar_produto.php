@@ -1,7 +1,7 @@
 <?php
 echo "entrou alterar produto page";
 
-function salvar_produto($id_produto, $nome_produto="Cebola", $est_min_produto="1", $est_max_produto="100000", $valor_unit_produto="8,0", $qtdade_produto="1000"){
+function update_produto($id_produto, $nome_produto="Cebola", $est_min_produto="1", $est_max_produto="100000", $valor_unit_produto="8,0", $qtdade_produto="1000"){
 	if(isset($_POST["atualizar"])){
 		try{
 			echo $nome_produto . "<br>";
@@ -19,7 +19,13 @@ function salvar_produto($id_produto, $nome_produto="Cebola", $est_min_produto="1
 				//'INSERT INTO PRODUTOS(NOME_PRODUTO, ESTOQUE_MINIMO, ESTOQUE_MAXIMO, VALOR_UNITARIO, QUANTIDADE)' .
 				//'VALUES(:NOME_PRODUTO, :ESTOQUE_MINIMO, :ESTOQUE_MAXIMO, :VALOR_UNITARIO, :QUANTIDADE)';
 	
-
+			$sql = 'UPDATE PRODUTOS
+						SET NOME_PRODUTO = :NOME_PRODUTO, 
+						ESTOQUE_MINIMO = :ESTOQUE_MINIMO, 
+						ESTOQUIE_MAXIMO = :ESTOQUIE_MAXIMO,
+						VALOR_UNITARIO = :VALOR_UNITARIO,
+						QUANTIDADE = :QUANTIDADE
+	 					WHERE ID_PRODUTO = :ID_PRODUTO;';
 			$tmp = $conn->prepare($sql);
 			echo "deu certo";
 			$tmp->execute([ 

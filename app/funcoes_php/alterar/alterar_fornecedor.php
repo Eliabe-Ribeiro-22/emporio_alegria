@@ -6,6 +6,11 @@ function update_fornecedor($nome_fornecedor, $email_fornecedor, $telefone_fornec
 			require_once "./../../../../config/config.php";
 			$conn = conexaoDB();
 			//$sql = 'INSERT INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR)'.'VALUES(:NOME_FORNECEDOR, :EMAIL_FORNECEDOR, :TELEFONE_FORNECEDOR )';
+			$sql = 'UPDATE FORNECEDORES 
+					SET NOME_FORNECEDOR = :NOME_FORNECEDOR, 
+					TELEFONE_FORNECEDOR = :TELEFONE_FORNECEDOR,
+					EMAIL_FORNECEDOR = :EMAIL_FORNECEDOR
+					WHERE ID_FORNECEDOR = :ID_FORNECEDOR ;';
 			$tmp = $conn->prepare($sql);
 			$tmp->execute([
 				':ID_FORNECEDOR' => $id_fornecedor,

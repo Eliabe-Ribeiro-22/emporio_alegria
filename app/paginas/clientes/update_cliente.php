@@ -14,7 +14,7 @@ else if($_SERVER['REQUEST_METHOD'] == "POST"){
 		$telefone_cliente = $_POST['telefone_cliente'];
 		$email_cliente = $_POST['email_cliente'];
 		$cidade_cliente = $_POST['cidade_cliente'];
-		echo "alterar";
+		echo "alterar" . $id_cliente;
 		require_once "../../funcoes_php/alterar/alterar_cliente.php";
 		echo "chamar func update_cliente";
 		update_cliente($id_cliente, $nome_cliente, $endereco_cliente, $telefone_cliente, $email_cliente, $cidade_cliente);
