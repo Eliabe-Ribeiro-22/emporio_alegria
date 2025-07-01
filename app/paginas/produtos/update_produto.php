@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	echo $est_max_produto . "<br>";
 	echo $valor_unit_produto . "<br>";
 	echo $qtdade_produto . "<br>";
-	
+	echo "alterar";
 	require_once "../../funcoes_php/alterar/alterar_produto.php";
 	echo "chamar func alterar_produto";
 	update_produto($id_produto, $nome_produto, $est_min_produto, $est_min_produto, $valor_unit_produto, $qtdade_produto);

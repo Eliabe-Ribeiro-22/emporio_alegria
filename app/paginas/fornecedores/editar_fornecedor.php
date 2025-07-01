@@ -31,7 +31,7 @@
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./update_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">
 			<label>Código:</label>
-			<input type="text"disabled value="<?php echo $id_fornecedor ?>" name="id_fornecedor" id="id_fornecedor">
+			<input type="text" value="<?php echo $id_fornecedor ?>" name="id_fornecedor" id="id_fornecedor">
 
 			<label>Nome:</label>
 			<input type="text" name="nome_fornecedor" id="nome-fornecedor" value="<?php echo $nome_fornecedor ?>">
@@ -43,7 +43,7 @@
 			<input type="email" name="email_fornecedor" id="email-fornecedor" value="<?php echo $email_fornecedor ?>">
 
 			
-			<input type="submit" value="editar" name="editar">
+			<input type="submit" value="atualizar" name="atualizar">
 		</form>
 		<script type="text/javascript" src="../../assets/js/fornecedores.js"></script>
 	</main>

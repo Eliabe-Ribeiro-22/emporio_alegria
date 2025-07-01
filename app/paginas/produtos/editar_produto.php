@@ -33,7 +33,7 @@
 	<a href="../../../index.php">Voltar ao inicio</a>
 	<form action="./update_produto.php" method="POST" onsubmit="return valida_produtos()">
 		<label>Código:</label>
-		<input type="text"disabled value="<?php echo $id_produto ?>" name="id_produto" id="id_produto">
+		<input type="text" value="<?php echo $id_produto ?>" name="id_produto" id="id_produto">
 	
 		<label>Nome:</label>
 		<input type="text"  name="nome_produto" id="nome-produto" value="<?php echo $nome_produto ?>">
@@ -50,7 +50,7 @@
 		<label>Quantidade:</label>
 		<input type="number" name="qtdade" id="qtdade" value="<?php echo $qtdade ?>">
 	
-		<input type="submit" value="editar" name="editar">
+		<input type="submit" value="atualizar" name="atualizar">
 
 	</form>
 </main>
