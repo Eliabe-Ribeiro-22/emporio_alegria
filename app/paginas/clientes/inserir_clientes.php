@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		Cabeçalho
+		<h1>cabeçalho</h1>
 	</header>
 	
 	<main>

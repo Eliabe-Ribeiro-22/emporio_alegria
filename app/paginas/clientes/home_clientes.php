@@ -1,8 +1,13 @@
-<a href="./inserir_clientes.php">Cadastrar novo cliente</a>
-<a href="../../../index.php">Voltar ao início</a>
-<link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+	
+</head>
+<body>
+	<h1>cabeçalho</h1>
+	<a href="./inserir_clientes.php">Cadastrar novo cliente</a>
+	<a href="../../../index.php">Voltar ao início</a>
 
-CLIENTES CADASTRADOS
+	<h1>CLIENTES CADASTRADOS</h1>
 
 <?php
 session_start(); 
@@ -21,3 +26,4 @@ session_start();
 require_once "./listar_clientes.php";
 listar_clientes();
 ?>
+</body>

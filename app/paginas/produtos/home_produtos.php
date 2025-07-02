@@ -3,7 +3,7 @@
 </head>
 
 <body>
-	PRODUTOS CADASTRADOS
+	<h1>PRODUTOS CADASTRADOS</h1>
 	<a href="./inserir_produtos.php">Cadastrar novo produto</a>
 	<a href="../../../index.php">Voltar ao início</a>
 </body>

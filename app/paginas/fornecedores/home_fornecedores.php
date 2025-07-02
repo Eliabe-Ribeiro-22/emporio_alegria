@@ -1,10 +1,15 @@
-<link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">	
+</head>
+
+<body>
+	
 <a href="./inserir_fornecedores.php">Cadastrar novo fornecedor</a>
 <a href="../../../index.php">Voltar ao início</a>
 
 
+<h1>FORNECEDORES CADASTRADOS</h1>
 
-FORNECEDORES CADASTRADOS
 
 <?php
 session_start();
@@ -24,3 +29,5 @@ session_start();
 require_once "./listar_fornecedores.php";
 listar_fornecedores();
 ?>
+	
+</body>

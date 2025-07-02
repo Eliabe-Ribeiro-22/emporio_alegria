@@ -3,9 +3,24 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background: red;
+}
+
+:root{
+	/*cores*/
+--text-primary:	#7C6354;
+--background-btn-primary: #007BFF;
+--background-site: #F8FCDA;
 }
 
 button{
 	cursor: pointer;
+	color: var();
+}
+
+body{
+	background: var(--background-site);
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+	color: var(--text-primary);
 }

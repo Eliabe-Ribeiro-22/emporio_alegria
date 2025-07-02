@@ -8,11 +8,11 @@
 </head>
 <body>
 <header>
-	cabeçalho
+	<h1>cabeçalho</h1>
 </header>
 
 <main>
-	Conteúdo do site
+	<h1></h1>Conteúdo do site</h1>
 <a href="./app/paginas/produtos/home_produtos.php">Acessar produtos</a>	
 <a href="./app/paginas/clientes/home_clientes.php">Acessar clientes</a>	
 <a href="./app/paginas/vendas/vendas.php">Cadastrar venda</a>
@@ -20,8 +20,9 @@
 </main>
 
 <footer>
-	rodapé.
-	All rights reserved.2025-2025. Eliabe Ribeiro Mota.
+	<h1>rodapé.
+	All rights reserved.2025-2025. Eliabe Ribeiro Mota.</h1>
+	
 </footer>
 </body>
 </html>
