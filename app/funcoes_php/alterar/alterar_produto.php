@@ -14,7 +14,6 @@ function update_produto($id_produto, $nome_produto="Cebola", $est_min_produto="1
 						QUANTIDADE = :QUANTIDADE
 	 					WHERE ID_PRODUTO = :ID_PRODUTO;';
 			$tmp = $conn->prepare($sql);
-			echo "deu certo";
 			$tmp->execute([ 
 				':ID_PRODUTO' => $id_produto, 
 				':NOME_PRODUTO' => $nome_produto, 
@@ -23,7 +22,7 @@ function update_produto($id_produto, $nome_produto="Cebola", $est_min_produto="1
 				':VALOR_UNITARIO' => $valor_unit_produto,
 				':QUANTIDADE' => $qtdade_produto
 			]);
-			echo "produto cadastrado no banco com sucesso";
+			echo "produto alterado no banco com sucesso";
 		}catch (PDOException $e) {
 	       	// status da operacao de insercao de dados no SQL
         	$status = false;

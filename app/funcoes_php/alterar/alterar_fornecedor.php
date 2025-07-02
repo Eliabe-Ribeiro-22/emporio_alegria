@@ -17,8 +17,7 @@ function update_fornecedor($id_fornecedor, $nome_fornecedor, $telefone_fornecedo
 				':TELEFONE_FORNECEDOR' => $telefone_fornecedor,
 				':EMAIL_FORNECEDOR' => $email_fornecedor
 			]);
-		echo "fornecedor cadastrado com sucesso";
-		echo "salvou ok";
+		echo "fornecedor alterado com sucesso";
 		}catch (PDOException $e) {
         	// status da operacao de insercao de dados no SQL
         	$status = false;
