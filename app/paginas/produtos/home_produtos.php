@@ -1,7 +1,12 @@
-<a href="./inserir_produtos.php">Cadastrar novo produto</a>
-<a href="../../../index.php">Voltar ao início</a>
+<head>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">	
+</head>
 
-PRODUTOS CADASTRADOS
+<body>
+	PRODUTOS CADASTRADOS
+	<a href="./inserir_produtos.php">Cadastrar novo produto</a>
+	<a href="../../../index.php">Voltar ao início</a>
+</body>
 
 
 <?php

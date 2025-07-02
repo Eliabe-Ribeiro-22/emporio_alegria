@@ -1,5 +1,7 @@
+<link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
 <a href="./inserir_fornecedores.php">Cadastrar novo fornecedor</a>
 <a href="../../../index.php">Voltar ao início</a>
+
 
 
 FORNECEDORES CADASTRADOS

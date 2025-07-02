@@ -1,5 +1,6 @@
 <a href="./inserir_clientes.php">Cadastrar novo cliente</a>
 <a href="../../../index.php">Voltar ao início</a>
+<link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
 
 CLIENTES CADASTRADOS
 
