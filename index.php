@@ -12,7 +12,8 @@
 </header>
 
 <main>
-	<h1></h1>Conteúdo do site</h1>
+	<h1 id="boas-vindas">Bem-vindo usuário!</h1>
+	<h2  id="boas-vindas">Você está na área logada do sistema de gestão de mercado <br><strong>Empório Alegria</strong></h2>
 <a href="./app/paginas/produtos/home_produtos.php">Acessar produtos</a>	
 <a href="./app/paginas/clientes/home_clientes.php">Acessar clientes</a>	
 <a href="./app/paginas/vendas/vendas.php">Cadastrar venda</a>

@@ -36,4 +36,3 @@ let cidade_cliente = document.querySelector("#cidade-cliente").value;
 	alert("Todos os dados foram preenchidos com sucesso");
 	return true;
 }
-valida_clientes();

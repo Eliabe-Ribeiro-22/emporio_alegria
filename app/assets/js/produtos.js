@@ -52,4 +52,3 @@ let qtdade_produto = document.querySelector("#qtdade").value;
 	return true;
 }
 
-valida_produtos();

@@ -1,0 +1,16 @@
+/*codigos da home_fornecedores, novo fornecedor e alterar fornecedor*/
+
+form#inserir-cliente{
+margin: 0 25vw;
+width: 50vw;
+background: var(--bg-form);
+
+}
+
+#banana-cliente{
+	display:block;
+}
+
+#button-banana-cliente{
+	background: var(--bg-btn);
+}

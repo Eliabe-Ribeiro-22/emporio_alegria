@@ -1,3 +1,9 @@
+@import "./nav.css";
+@import "./footer.css";
+@import "./fornecedores.css";
+@import "./clientes.css";
+@import "./produtos.css";
+
 /*Globais*/
 *{
 	margin: 0;
@@ -6,21 +12,30 @@
 }
 
 :root{
-	/*cores*/
+	/*cores do site*/
 --text-primary:	#7C6354;
---background-btn-primary: #007BFF;
---background-site: #F8FCDA;
+--bg-btn: #7F5F00;
+--bg-site: #F8FCDA;
+--bg-form: #E3E9C2;
 }
 
 button{
 	cursor: pointer;
-	color: var();
+	color: var(--bg-btn);
 }
 
 body{
-	background: var(--background-site);
+	background: var(--bg-site);
 }
 
-h1, h2, h3, h4, h5, h6, p, a{
+h1, h2, h3, h4, h5, h6{
 	color: var(--text-primary);
 }
+
+a{
+	background: var(--bg-btn);
+	padding: 10px;
+	color: #fff;
+
+}
+
