@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
 else if($_SERVER['REQUEST_METHOD'] == "POST"){
 	if(isset($_POST["atualizar"])){
 		$id_cliente = $_POST['id_cliente'];
-		$id_cliente = 14;		
+		//$id_cliente = 14;		
 		$nome_cliente = $_POST['nome_cliente'];
 		$endereco_cliente = $_POST['endereco_cliente'];
 		$telefone_cliente = $_POST['telefone_cliente'];

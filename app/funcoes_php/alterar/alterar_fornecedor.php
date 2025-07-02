@@ -1,11 +1,10 @@
 <?php
 session_start();
-function update_fornecedor($nome_fornecedor, $email_fornecedor, $telefone_fornecedor){
+function update_fornecedor($id_fornecedor, $nome_fornecedor, $telefone_fornecedor, $email_fornecedor){
 	if (isset($_POST['atualizar'])) {
 		try{
 			require_once "./../../../../config/config.php";
 			$conn = conexaoDB();
-			//$sql = 'INSERT INTO FORNECEDORES(NOME_FORNECEDOR, EMAIL_FORNECEDOR, TELEFONE_FORNECEDOR)'.'VALUES(:NOME_FORNECEDOR, :EMAIL_FORNECEDOR, :TELEFONE_FORNECEDOR )';
 			$sql = 'UPDATE FORNECEDORES 
 					SET NOME_FORNECEDOR = :NOME_FORNECEDOR, 
 					TELEFONE_FORNECEDOR = :TELEFONE_FORNECEDOR,
