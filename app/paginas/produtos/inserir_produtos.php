@@ -14,27 +14,26 @@
 <main>
 	<h1>Cadastrar Produto</h1>
 	<a href="../../../index.php">Voltar ao inicio</a>
-	<form action="./salvar.php" method="POST" onsubmit="return valida_produtos()">
-		<label>Código:</label>
+	<form action="./salvar.php" method="POST" onsubmit="return valida_produtos()" id="inserir-produto">
+		<label id="banana-produto">Código:</label>
 		<input type="text" value="0" name="codigo_produto" id="codigo_produto">
 	
-		<label>Nome:</label>
+		<label id="banana-produto">Nome:</label>
 		<input type="text"  name="nome_produto" id="nome-produto">
 	
-		<label>Estoque Mínimo:</label>
+		<label id="banana-produto">Estoque Mínimo:</label>
 		<input type="number" name="estoque_minimo" id="est-min">
 	
-		<label>Estoque Máximo:</label>
+		<label id="banana-produto">Estoque Máximo:</label>
 		<input type="number" name="estoque_maximo" id="est-max">
 	
-		<label>Valor Unitário:</label>
+		<label id="banana-produto">Valor Unitário:</label>
 		<input type="text" name="valor_unitario" id="valor-unitario">
 	
-		<label>Quantidade:</label>
+		<label id="banana-produto">Quantidade:</label>
 		<input type="number" name="qtdade" id="qtdade">
 	
-		<!--input type="submit" value="Alterar"-->
-		<input type="submit" value="cadastrar" name="cadastrar">
+		<input type="submit" value="cadastrar" name="cadastrar" id="button-banana-produto">
 
 	</form>
 </main>

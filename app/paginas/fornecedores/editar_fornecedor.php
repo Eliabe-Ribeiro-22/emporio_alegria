@@ -35,13 +35,13 @@
 			<label>Código:</label>
 			<input type="text" value="<?php echo $id_fornecedor ?>" name="id_fornecedor" id="id_fornecedor">
 
-			<label>Nome:</label>
+			<label id="banana-fornecedor">Nome:</label>
 			<input type="text" name="nome_fornecedor" id="nome-fornecedor" value="<?php echo $nome_fornecedor ?>">
 
-			<label>Telefone:</label>
+			<label id="banana-fornecedor">Telefone:</label>
 			<input type="text" name="telefone_fornecedor" id="telefone-fornecedor" value="<?php echo $telefone_fornecedor ?>">
 
-			<label>Email:</label>
+			<label id="banana-fornecedor">Email:</label>
 			<input type="email" name="email_fornecedor" id="email-fornecedor" value="<?php echo $email_fornecedor ?>">
 
 			

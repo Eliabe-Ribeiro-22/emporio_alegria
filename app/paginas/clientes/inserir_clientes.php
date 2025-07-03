@@ -33,8 +33,7 @@
 			<label id="banana-cliente">Cidade:</label>
 			<input type="text" name="cidade_cliente" id="cidade-cliente">
 	
-			<!--input type="submit" value="Alterar"-->
-			<input type="submit" value="cadastrar" name="cadastrar">
+			<input type="submit" value="cadastrar" name="cadastrar" id="button-banana-cliente">
 		</form>
 	</main>
 	

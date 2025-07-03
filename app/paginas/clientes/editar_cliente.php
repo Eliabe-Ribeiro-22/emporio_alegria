@@ -32,26 +32,26 @@
 		?>
 		<h1>Edite um cliente</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
-		<form action="./update_cliente.php" method="POST" onsubmit="return valida_clientes()">
-			<label>Código:</label>
+		<form action="./update_cliente.php" method="POST" onsubmit="return valida_clientes()" id="inserir-cliente">
+			<label id="banana-cliente">Código:</label>
 			<input type="text" value="<?php echo $id_cliente ?>" name="id_cliente" id="id_cliente">
 
-			<label>Nome:</label>
+			<label id="banana-cliente">Nome:</label>
 			<input type="text" name="nome_cliente" id="nome-cliente" value="<?php echo $nome_cliente ?>">
 
-			<label>Endereço:</label>
+			<label id="banana-cliente">Endereço:</label>
 			<input type="text" name="endereco_cliente" id="endereco-cliente" value="<?php echo $endereco_cliente ?>">
 
-			<label>Telefone:</label>
+			<label id="banana-cliente">Telefone:</label>
 			<input type="text" name="telefone_cliente" id="telefone-cliente" value="<?php echo $telefone_cliente ?>">
 
-			<label>Email:</label>
+			<label id="banana-cliente">Email:</label>
 			<input type="email" name="email_cliente" id="email-cliente" value="<?php echo $email_cliente ?>">
 
-			<label>Cidade:</label>
+			<label id="banana-cliente">Cidade:</label>
 			<input type="text" name="cidade_cliente" id="cidade-cliente" value="<?php echo $cidade_cliente ?>">
 	
-			<input type="submit" value="atualizar" name="atualizar">
+			<input type="submit" value="atualizar" name="atualizar" id="button-banana-cliente">
 		</form>
 	</main>
 	
