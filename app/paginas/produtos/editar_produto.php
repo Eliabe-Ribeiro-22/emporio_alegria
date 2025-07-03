@@ -32,26 +32,26 @@
 	?>
 	<h1>Editar Produto</h1>
 	<a href="../../../index.php">Voltar ao inicio</a>
-	<form action="./update_produto.php" method="POST" onsubmit="return valida_produtos()">
-		<label>Código:</label>
+	<form action="./update_produto.php" method="POST" onsubmit="return valida_produtos()" id="inserir-produto">
+		<label id="banana-produto">Código:</label>
 		<input type="text" value="<?php echo $id_produto ?>" name="id_produto" id="id_produto">
 	
-		<label>Nome:</label>
+		<label id="banana-produto">Nome:</label>
 		<input type="text"  name="nome_produto" id="nome-produto" value="<?php echo $nome_produto ?>">
 	
-		<label>Estoque Mínimo:</label>
+		<label id="banana-produto">Estoque Mínimo:</label>
 		<input type="number" name="estoque_minimo" id="est-min" value="<?php echo $estoque_minimo?>">
 	
-		<label>Estoque Máximo:</label>
+		<label id="banana-produto">Estoque Máximo:</label>
 		<input type="number" name="estoque_maximo" id="est-max" value="<?php echo $estoque_maximo?>">
 	
-		<label>Valor Unitário:</label>
+		<label id="banana-produto">Valor Unitário:</label>
 		<input type="text" name="valor_unitario" id="valor-unitario" value="<?php echo $valor_unitario?>">
 	
-		<label>Quantidade:</label>
+		<label id="banana-produto">Quantidade:</label>
 		<input type="number" name="qtdade" id="qtdade" value="<?php echo $qtdade ?>">
 	
-		<input type="submit" value="atualizar" name="atualizar">
+		<input type="submit" value="atualizar" name="atualizar" id="button-banana-produto">
 
 	</form>
 </main>

@@ -9,8 +9,11 @@ background: var(--bg-form);
 
 #banana-cliente{
 	display:block;
+	font-size: 26px;
+	font-weight: bolder;
 }
 
 #button-banana-cliente{
 	background: var(--bg-btn);
+	font-size: 2rem;
 }

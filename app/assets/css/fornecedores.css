@@ -9,8 +9,11 @@ background: var(--bg-form);
 
 #banana-fornecedor{
 	display:block;
+	font-size: 26px;
+	font-weight: bolder;
 }
 
 #button-banana-fornecedor{
 	background: var(--bg-btn);
+	font-size: 2rem;
 }

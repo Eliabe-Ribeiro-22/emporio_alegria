@@ -3,6 +3,8 @@
 	
 </head>
 <body>
+<header>cabeçalho</header>
+	<main class="align-main">
 	<h1>cabeçalho</h1>
 	<a href="./inserir_clientes.php">Cadastrar novo cliente</a>
 	<a href="../../../index.php">Voltar ao início</a>
@@ -26,4 +28,7 @@ session_start();
 require_once "./listar_clientes.php";
 listar_clientes();
 ?>
+		</main>
+<footer>rodape</footer>
+
 </body>

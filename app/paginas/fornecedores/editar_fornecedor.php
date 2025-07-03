@@ -31,8 +31,8 @@
 		?>
 		<h1>Edite um fornecedor</h1>
 		<a href="../../../index.php">Voltar ao inicio</a>
-		<form action="./update_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()">
-			<label>Código:</label>
+		<form action="./update_fornecedor.php" method="POST" onsubmit="return valida_fornecedores()" id="inserir-fornecedor">
+			<label id="banana-fornecedor">Código:</label>
 			<input type="text" value="<?php echo $id_fornecedor ?>" name="id_fornecedor" id="id_fornecedor">
 
 			<label id="banana-fornecedor">Nome:</label>
@@ -45,7 +45,7 @@
 			<input type="email" name="email_fornecedor" id="email-fornecedor" value="<?php echo $email_fornecedor ?>">
 
 			
-			<input type="submit" value="atualizar" name="atualizar">
+			<input type="submit" value="atualizar" name="atualizar" id="button-banana-fornecedor">
 		</form>
 		<script type="text/javascript" src="../../assets/js/fornecedores.js"></script>
 	</main>

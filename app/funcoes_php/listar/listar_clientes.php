@@ -17,7 +17,7 @@ function listar(){
 				echo "O email do cliente é: " . $value["EMAIL_CLIENTE"] . "<BR>";
 				echo "A cidade do cliente é: " . $value["CIDADE_CLIENTE"] . "<BR>";
 				echo "<a href='editar_cliente.php?id=". $value["ID_CLIENTE"] . "'>" . "&#9998" . "</a>";
-				echo "<form  method='POST' action='./excluir_cliente.php' >" . "<input name='id_cliente' value='" . $value["ID_CLIENTE"] . "'> <button name='excluir_cliente'>🗑" . "</button><BR></form>";
+				echo "<form  method='POST' action='./excluir_cliente.php' >" . "<input name='id_cliente' value='" . $value["ID_CLIENTE"] . "'> <button name='excluir_cliente' id='button-banana-cliente'>🗑" . "</button><BR></form>";
 			}
 		}else{
 		echo "Não há clientes cadastrados. <a href='../../paginas/clientes/clientes.php'>Cadastre um agora mesmo</a>!";
