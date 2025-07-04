@@ -11,6 +11,7 @@
 
 	<h1>CLIENTES CADASTRADOS</h1>
 
+</main>
 <?php
 session_start(); 
 //	SELECT NOME_CLIENTE, TELEFONE_CLIENTE, EMAIL_CLIENTE, CIDADE_CLIENTE from CLIENTES order by NOME_CLIENTE_asc
@@ -28,13 +29,14 @@ session_start();
 require_once "./listar_clientes.php";
 listar_clientes();
 ?>
-</main>
 	<table>
 			<tr>
 				<th>Nome</th>
 				<th>Telefone</th>
 				<th>Email</th>
 				<th>Cidade</th>
+				<th>Editar</th>
+				<th>Excluir</th>
 			</tr>
 			<tr>
 				<td>ELiabe</td>

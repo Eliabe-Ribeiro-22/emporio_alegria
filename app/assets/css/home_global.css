@@ -1,8 +1,8 @@
 table{
 	background: var(--bg-btn);
-	width: 40vw;
+	width: 10vw;
 	color: white;
-	margin: 0 15%;
+	margin: 0 10px;
 }
 
 th{

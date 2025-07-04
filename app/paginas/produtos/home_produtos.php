@@ -25,10 +25,20 @@
 		listar_produtos();
 	?>
 	</main>
+	<table>
+			<tr>
+				<th>Nome</th>
+				<th>Valor Unitário</th>
+				<th>Quantidade</th>
+				<th>Editar</th>
+				<th>Excluir</th>
+			</tr>
 			<tr>
 				<td>ALho</td>
 				<td>10,98</td>
 				<td>100</td>
+				<td>&#9998</td>
+				<td>🗑</td>
 			</tr>
 	</table>
 
