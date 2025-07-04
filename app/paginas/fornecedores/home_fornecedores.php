@@ -9,6 +9,7 @@
 		<a href="../../../index.php">Voltar ao início</a>
 
 		<h1>FORNECEDORES CADASTRADOS</h1>
+		</main>
 		<?php
 		session_start();
 
@@ -24,20 +25,6 @@
 		require_once "./listar_fornecedores.php";
 		listar_fornecedores();
 		?>
-		</main>
-		<table>
-			<tr>
-				<th>Nome</th>
-				<th>Telefone</th>
-				<th>Email</th>
-			</tr>
-			<tr>
-				<td>ELiabe</td>
-				<td>049 9 9837-9858</td>
-				<td>eliaberibeiro06@gmail.com</td>
-			</tr>
-		</table>
-
 <footer>
 	rodape
 </footer>	

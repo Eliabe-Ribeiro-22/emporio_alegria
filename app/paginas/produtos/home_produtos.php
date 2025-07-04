@@ -25,12 +25,6 @@
 		listar_produtos();
 	?>
 	</main>
-	<table>
-			<tr>
-				<th>Produto</th>
-				<th>Valor Unitário</th>
-				<th>Quantidade</th>
-			</tr>
 			<tr>
 				<td>ALho</td>
 				<td>10,98</td>
