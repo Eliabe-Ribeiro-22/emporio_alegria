@@ -1,7 +1,8 @@
 <?php
-function update_produto($id_produto, $nome_produto="Cebola", $est_min_produto="1", $est_max_produto="100000", $valor_unit_produto="8,0", $qtdade_produto="1000"){
+function update_produto($id_produto, $nome_produto, $est_min_produto, $est_max_produto, $valor_unit_produto, $qtdade_produto){
 	if(isset($_POST["atualizar"])){
 		try{
+			echo "chegou aqui";
 			// string conexao
 			require_once './../../../../config/config.php';
 			$conn = conexaoDB();
@@ -9,7 +10,7 @@ function update_produto($id_produto, $nome_produto="Cebola", $est_min_produto="1
 			$sql = 'UPDATE PRODUTOS
 						SET NOME_PRODUTO = :NOME_PRODUTO, 
 						ESTOQUE_MINIMO = :ESTOQUE_MINIMO, 
-						ESTOQUIE_MAXIMO = :ESTOQUIE_MAXIMO,
+						ESTOQUE_MAXIMO = :ESTOQUE_MAXIMO,
 						VALOR_UNITARIO = :VALOR_UNITARIO,
 						QUANTIDADE = :QUANTIDADE
 	 					WHERE ID_PRODUTO = :ID_PRODUTO;';
