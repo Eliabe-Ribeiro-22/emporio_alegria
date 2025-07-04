@@ -1,0 +1,15 @@
+table{
+	background: var(--bg-btn);
+	width: 50vw;
+	color: white;
+}
+
+th{
+	font-weight: bolder;
+	font-size: 3rem;
+}
+
+td{
+	font-weight: 100;
+	font-size: 1.5rem;
+}

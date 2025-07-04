@@ -24,7 +24,19 @@
 		require_once "./listar_produtos.php";
 		listar_produtos();
 	?>
-
+	<table>
+			<tr>
+				<th>Nome</th>
+				<th>Telefone</th>
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>ELiabe</td>
+				<td>049 9 9837-9858</td>
+				<td>eliaberibeiro06@gmail.com</td>
+			</tr>
+	</table>
+	
 	</main>
 	<footer>rodape</footer>	
 	</main>
