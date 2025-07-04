@@ -1,6 +1,6 @@
 <?php
 session_start();
-function salvar_fornecedor($nome_fornecedor="Junior", $telefone_fornecedor="49988477611", $email_fornecedor="junior@gmail.com"){
+function salvar_fornecedor($nome_fornecedor, $telefone_fornecedor, $email_fornecedor){
 	if (isset($_POST['cadastrar'])) {
 	
 		try{

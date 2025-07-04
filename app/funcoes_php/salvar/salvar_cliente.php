@@ -1,6 +1,6 @@
 <?php
 session_start();
-function salvar_cliente($nome_cliente = "Eliabe", $endereco_cliente="30 de marco", $telefone_cliente = "49988426048", $email_cliente="eliabe@gmail.com", $cidade_cliente="pan"){
+function salvar_cliente($nome_cliente, $endereco_cliente, $telefone_cliente, $email_cliente, $cidade_cliente){
 	
 		require_once "./../../../../config/config.php";
 		$conn = conexaoDB();

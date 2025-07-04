@@ -1,6 +1,6 @@
 <?php
 session_start();
-function salvar_produto($nome_produto="Cebola", $est_min_produto="1", $est_max_produto="100000", $valor_unit_produto="8,0", $qtdade_produto="1000"){
+function salvar_produto($nome_produto, $est_min_produto, $est_max_produto, $valor_unit_produto, $qtdade_produto){
 	if(isset($_POST["cadastrar"])){
 		try{
 			echo $nome_produto . "<br>";

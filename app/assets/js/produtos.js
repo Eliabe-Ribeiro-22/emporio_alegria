@@ -32,7 +32,7 @@ let qtdade_produto = document.querySelector("#qtdade").value;
 		qtdade_produto.focus();
 		return false;
 	}
-	if (est_max_produto < qtdade_produto) {
+	if (est_max_produto > qtdade_produto) {
 		alert("A quantidade precisa ser menor que o est_max_produto")
 		qtdade_produto.focus();
 		return false;

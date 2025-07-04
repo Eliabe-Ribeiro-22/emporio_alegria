@@ -8,6 +8,7 @@
 			<h1>PRODUTOS CADASTRADOS</h1>
 	<a href="./inserir_produtos.php">Cadastrar novo produto</a>
 	<a href="../../../index.php">Voltar ao início</a>
+	</main>
 	<?php
 		session_start();
 		//deseja realmente excluir o cliente? SIM OU Não 
@@ -24,7 +25,7 @@
 		require_once "./listar_produtos.php";
 		listar_produtos();
 	?>
-	</main>
+	
 	<table>
 			<tr>
 				<th>Nome</th>

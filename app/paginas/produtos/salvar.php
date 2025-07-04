@@ -12,14 +12,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	$valor_unit_produto = $_POST['valor_unitario'];
 	$qtdade_produto = $_POST['qtdade'];
 
-	echo $nome_produto . "<br>";
-	echo $est_min_produto . "<br>";
-	echo $est_max_produto . "<br>";
-	echo $valor_unit_produto . "<br>";
-	echo $qtdade_produto . "<br>";
 	
 	require_once "../../funcoes_php/salvar/salvar_produto.php";
-	echo "chamar func salvar_produto";
 	salvar_produto($nome_produto, $est_min_produto, $est_min_produto, $valor_unit_produto, $qtdade_produto);
 	header("refresh: 3; home_produtos.php");
 }
