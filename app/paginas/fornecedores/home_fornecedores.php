@@ -24,6 +24,7 @@
 		require_once "./listar_fornecedores.php";
 		listar_fornecedores();
 		?>
+		</main>
 		<table>
 			<tr>
 				<th>Nome</th>
@@ -36,7 +37,6 @@
 				<td>eliaberibeiro06@gmail.com</td>
 			</tr>
 		</table>
-	</main>
 
 <footer>
 	rodape

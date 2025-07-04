@@ -24,20 +24,20 @@
 		require_once "./listar_produtos.php";
 		listar_produtos();
 	?>
+	</main>
 	<table>
 			<tr>
-				<th>Nome</th>
-				<th>Telefone</th>
-				<th>Email</th>
+				<th>Produto</th>
+				<th>Valor Unitário</th>
+				<th>Quantidade</th>
 			</tr>
 			<tr>
-				<td>ELiabe</td>
-				<td>049 9 9837-9858</td>
-				<td>eliaberibeiro06@gmail.com</td>
+				<td>ALho</td>
+				<td>10,98</td>
+				<td>100</td>
 			</tr>
 	</table>
-	
-	</main>
+
 	<footer>rodape</footer>	
 	</main>
 	

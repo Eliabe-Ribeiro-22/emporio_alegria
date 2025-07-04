@@ -28,19 +28,22 @@ session_start();
 require_once "./listar_clientes.php";
 listar_clientes();
 ?>
+</main>
 	<table>
 			<tr>
 				<th>Nome</th>
 				<th>Telefone</th>
 				<th>Email</th>
+				<th>Cidade</th>
 			</tr>
 			<tr>
 				<td>ELiabe</td>
 				<td>049 9 9837-9858</td>
 				<td>eliaberibeiro06@gmail.com</td>
+				<td>Ponte Alta do Norte</td>
 			</tr>
 	</table>
-</main>
+
 <footer>rodape</footer>
 
 </body>
