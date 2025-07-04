@@ -26,8 +26,8 @@ function listar(){
 			echo "<td>" . $value["TELEFONE_CLIENTE"] . "</td>";
 			echo "<td>" .  $value["EMAIL_CLIENTE"] . "</td>";
 			echo "<td>" .  $value["CIDADE_CLIENTE"] . "</td>";
-			echo "<td>" . "&#9998"  . "</td>";
-			echo "<td>" . "🗑"  . "</td>";
+			echo "<td>" . "<a href='editar_cliente.php?id=". $value["ID_CLIENTE"] . "'>" . "&#9998" . "</a>"  . "</td>";
+			echo "<td>" . "<form  method='POST' action='./excluir_cliente.php' >" . "<input name='id_cliente' value='" . $value["ID_CLIENTE"] . "'> <button name='excluir_cliente' id='button-banana-cliente'>🗑" . "</button><BR></form>"  . "</td>";
 
 				//echo "<a href='" . $value["ID_CLIENTE"] . "'>" . $value["ID_CLIENTE"] . "</a>";
 				//echo "O nome do cliente é: " . $value["NOME_CLIENTE"] . "<BR>";

@@ -29,23 +29,6 @@ session_start();
 require_once "./listar_clientes.php";
 listar_clientes();
 ?>
-	<table>
-			<tr>
-				<th>Nome</th>
-				<th>Telefone</th>
-				<th>Email</th>
-				<th>Cidade</th>
-				<th>Editar</th>
-				<th>Excluir</th>
-			</tr>
-			<tr>
-				<td>ELiabe</td>
-				<td>049 9 9837-9858</td>
-				<td>eliaberibeiro06@gmail.com</td>
-				<td>Ponte Alta do Norte</td>
-			</tr>
-	</table>
-
 <footer>rodape</footer>
 
 </body>
