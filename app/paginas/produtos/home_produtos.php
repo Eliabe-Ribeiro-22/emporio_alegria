@@ -37,8 +37,15 @@
 				<td>ALho</td>
 				<td>10,98</td>
 				<td>100</td>
-				<td>&#9998</td>
-				<td>🗑</td>
+				<td>
+					<a href='editar_produto.php?id=14' style="background: #000">&#9998</a>
+				</td>
+				<td>
+					<form  method='POST' action='./excluir_produto.php' >
+						<input name='id_produto' value="15" style='display: none;'> 
+						<button name='excluir_produto' style="background: #000;">🗑</button>
+					</form>
+				</td>
 			</tr>
 	</table>
 

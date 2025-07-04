@@ -26,9 +26,10 @@ try{
 			echo "<td>" . $value["NOME_FORNECEDOR"] . "</td>";
 			echo "<td>" . $value["TELEFONE_FORNECEDOR"] . "</td>";
 			echo "<td>" .  $value["EMAIL_FORNECEDOR"] . "</td>";
-			echo "<td>" . "&#9998"  . "</td>";
-			echo "<td>" . "🗑"  . "</td>";
-
+			//echo "<td>" . "&#9998"  . "</td>";
+			echo "<td>" . "<a href='editar_fornecedor.php?id=" . $value["ID_FORNECEDOR"] . "'>" . "&#9998" . "</a>" . "</td>";
+			//echo "<td>" . "🗑"  . "</td>";
+			echo "<td>" . "<form  method='POST' action='./excluir_fornecedor.php' >" . "<input name='id_fornecedor' value='" . $value['ID_FORNECEDOR'] . "' style='display: none;'> <button name='excluir_fornecedor'>🗑" . "</button><BR></form>"."</td>";
 			
 			//echo "<a href='" . $value["ID_FORNECEDOR"] . "'>" . $value["ID_FORNECEDOR"] . "</a>";
 			//echo "O nome do fornecedor é: " . $value["NOME_FORNECEDOR"] . "<BR>";
