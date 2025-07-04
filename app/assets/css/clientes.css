@@ -7,11 +7,12 @@ background: var(--bg-form);
 
 }
 
-#banana-cliente{
+label#banana-cliente{
 	display:block;
 	font-size: 26px;
 	font-weight: bolder;
 }
+
 
 #button-banana-cliente{
 	background: var(--bg-btn);

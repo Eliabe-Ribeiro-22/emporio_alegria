@@ -34,22 +34,22 @@
 		<a href="../../../index.php">Voltar ao inicio</a>
 		<form action="./update_cliente.php" method="POST" onsubmit="return valida_clientes()" id="inserir-cliente">
 			<label id="banana-cliente">Código:</label>
-			<input type="text" value="<?php echo $id_cliente ?>" name="id_cliente" id="id_cliente">
+			<input type="text" value="<?php echo $id_cliente ?>" class="maca-cliente" name="id_cliente" id="id_cliente">
 
 			<label id="banana-cliente">Nome:</label>
-			<input type="text" name="nome_cliente" id="nome-cliente" value="<?php echo $nome_cliente ?>">
+			<input type="text" name="nome_cliente" id="nome-cliente" value="<?php echo $nome_cliente ?>" class="maca-cliente">
 
 			<label id="banana-cliente">Endereço:</label>
-			<input type="text" name="endereco_cliente" id="endereco-cliente" value="<?php echo $endereco_cliente ?>">
+			<input type="text" name="endereco_cliente" id="endereco-cliente" value="<?php echo $endereco_cliente ?>" class="maca-cliente">
 
 			<label id="banana-cliente">Telefone:</label>
-			<input type="text" name="telefone_cliente" id="telefone-cliente" value="<?php echo $telefone_cliente ?>">
+			<input type="text" name="telefone_cliente" id="telefone-cliente" value="<?php echo $telefone_cliente ?>" class="maca-cliente">
 
 			<label id="banana-cliente">Email:</label>
-			<input type="email" name="email_cliente" id="email-cliente" value="<?php echo $email_cliente ?>">
+			<input type="email" name="email_cliente" id="email-cliente" value="<?php echo $email_cliente ?>" class="maca-cliente">
 
 			<label id="banana-cliente">Cidade:</label>
-			<input type="text" name="cidade_cliente" id="cidade-cliente" value="<?php echo $cidade_cliente ?>">
+			<input type="text" name="cidade_cliente" id="cidade-cliente" value="<?php echo $cidade_cliente ?>" class="maca-cliente">
 	
 			<input type="submit" value="atualizar" name="atualizar" id="button-banana-cliente">
 		</form>

@@ -16,7 +16,8 @@
 --text-primary:	#7C6354;
 --bg-btn: #7F5F00;
 --bg-site: #F8FCDA;
---bg-form: #E3E9C2;
+--bg-form: #F9FBB2;
+--bg-input: #7F5F00;
 }
 
 button{
@@ -43,4 +44,16 @@ a{
 .align-main{
 	margin: 0 25vw;
 }
+
+/*Campos de entrada de todo o site*/
+input{
+	border: 3px dashed black;
+	border-radius: 15%;
+	background: var(--bg-input);
+	padding: 10px;
+	width: 80%;
+	margin-bottom: 2rem;
+	color: white;
+}
+
 
